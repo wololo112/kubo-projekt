@@ -45,6 +45,8 @@ nav a:active {
   background-color: #b49dc8;
 }
 
+<!--Dette er alle de ting som sker under forsiden-->
+
 .loaded {
   height: 20vh;
   background-color: red;
@@ -64,6 +66,8 @@ nav a:active {
   height: 20vh;
   background-color: purple;
 }
+
+<!--Dette er oprette en ny debat og søge efter debatter for alle fag-->
 
 .nydebat {
   height: 70vh;
@@ -85,7 +89,54 @@ nav a:active {
   background-color: #b49dc8;
 }
 
+<!--Dette er footer, FAQ og social links-->
+
 .footer {
   height: 10vh;
   background-color: green;
+}
+
+.facebook {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.instagram {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.linkedin {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.youtube {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.twitter {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
 }
