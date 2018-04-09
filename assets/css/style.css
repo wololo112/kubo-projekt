@@ -1,10 +1,9 @@
 body {
   margin: 0;
   padding: 0;
-  font-weight: 300;
 }
 
-<!--Dette er navigationsbaren-->
+/*Dette er navigationsbaren*/
 
 nav ul {
   list-style: none;
@@ -19,7 +18,7 @@ nav li {
 nav a:visited {
   display: block;
   width: 160px;
-  background-color: yellowgreen;
+  background-color: red;
   color: white;
   text-decoration: none;
   text-align: center;
@@ -31,7 +30,7 @@ nav a:visited {
 nav a:link {
   display: block;
   width: 160px;
-  background-color: yellowgreen;
+  background-color: red;
   color: white;
   text-decoration: none;
   text-align: center;
@@ -41,27 +40,29 @@ nav a:link {
 }
 
 nav a:hover {
-  background-color: green;
+  background-color: lightblue;
 }
 
 nav a:active {
-  background-color: green;
+  background-color: lightblue;
 }
 
+<!--Dette skal lige kigges på-->
 #header {
-  height: 5vh;
+  height: 20vh;
   background-color: #b49dc8;
 }
 
-<!--Dette er alle de ting som sker under forsiden-->
+/*Dette er alle de ting som sker under forsiden*/
 
 #loaded {
+  height: 20vh;
   background-color: red;
 }
 
 #flex-section {
   display: flex;
-  flex-direction: center;
+  flex-direction: row;
   margin: auto;
 }
 
@@ -81,7 +82,6 @@ nav a:active {
   margin: auto;
 }
 
-
 #calltoaction {
   height: 20vh;
   background-color: yellow;
@@ -92,7 +92,6 @@ nav a:active {
 }
 
 #calltoaction ul {
-
   justify-content: center
 }
 
@@ -113,7 +112,7 @@ nav a:active {
   margin: auto;
 }
 
-<!--Det er omkring nydebat som findes under matematik, sprog og andrefag html-->
+/*Det er omkring nydebat som findes under matematik, sprog og andrefag html*/
 
 #flex-section5 {
   display: flex;
@@ -137,7 +136,7 @@ nav a:active {
   margin: auto;
 }
 
-<!--Det er inde for sprodebat-->
+<!--Det er inde for sprogdebat-->
 
 #flex-section8 {
   display: flex;
@@ -145,7 +144,7 @@ nav a:active {
   margin: auto;
 }
 
-<!--Dette er oprette en ny debat og søge efter debatter for alle fag-->
+/*Dette er oprette en ny debat og søge efter debatter for alle fag*/
 
 .nydebat {
   height: 70vh;
@@ -167,11 +166,11 @@ nav a:active {
   background-color: #b49dc8;
 }
 
-<!--Dette er footer, FAQ og social links-->
+/*Dette er footer, FAQ og social links*/
 
 .footer {
   padding: 3vh;
-  height: 50vh;
+  height: 20vh;
   background-color: green;
 }
 
