@@ -1,0 +1,210 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+
+<!--Dette er navigationsbaren-->
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  float: left;
+}
+
+nav a:visited {
+  display: block;
+  width: 160px;
+  background-color: yellowgreen;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+nav a:link {
+  display: block;
+  width: 160px;
+  background-color: yellowgreen;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+nav a:hover {
+  background-color: green;
+}
+
+nav a:active {
+  background-color: green;
+}
+
+#header {
+  height: 5vh;
+  background-color: #b49dc8;
+}
+
+<!--Dette er alle de ting som sker under forsiden-->
+
+#loaded {
+  background-color: red;
+}
+
+#flex-section {
+  display: flex;
+  flex-direction: center;
+  margin: auto;
+  max-width: 600px;
+}
+
+#loaded h2 {
+  color: black;
+  text-align: center;
+}
+
+#forumtekst {
+  height: 20vh;
+  background-color: blue;
+}
+
+#flex-section2 {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  max-width: 1100px;
+}
+
+
+#calltoaction {
+  height: 20vh;
+  background-color: yellow;
+}
+
+#calltoaction h2 {
+  text-align: center;
+}
+
+#calltoaction ul {
+  
+  justify-content: center
+}
+
+#flex-section3 {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  max-width: 600px;
+}
+
+#introvideo {
+  height: 35vh;
+  background-color: purple;
+}
+
+#flex-section4 {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  max-width: 600px;
+}
+
+<!--Det er omkring nydebat som findes under matematik, sprog og andrefag html-->
+
+#flex-section5 {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  max-width: 600px;
+}
+
+<!--Det er inde for matematikdebat-->
+
+#flex-section6 {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  max-width: 600px;
+}
+
+<!--Det er inde for andrefagdebat-->
+
+#flex-section7 {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  max-width: 600px;
+}
+
+<!--Det er inde for sprodebat-->
+
+#flex-section8 {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  max-width: 600px;
+}
+
+<!--Dette er oprette en ny debat og søge efter debatter for alle fag-->
+
+.nydebat {
+  height: 70vh;
+  background-color: #8888;
+}
+
+.matematikdebat {
+  height: 40vh;
+  background-color: #b49dc8;
+}
+
+.sprogdebat {
+  height: 40vh;
+  background-color: #b49dc8;
+}
+
+.andrefagdebat {
+  height: 40vh;
+  background-color: #b49dc8;
+}
+
+<!--Dette er footer, FAQ og social links-->
+
+.footer {
+  padding: 3vh;
+  height: 50vh;
+  background-color: green;
+}
+
+.facebook {
+
+}
+
+.instagram {
+
+}
+
+.linkedin {
+
+}
+
+.youtube {
+
+}
+
+.twitter {
+
+}
+
+#test {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
