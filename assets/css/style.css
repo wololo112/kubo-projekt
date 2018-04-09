@@ -3,49 +3,7 @@ body {
   padding: 0;
 }
 
-/*Dette er navigationsbaren*/
 
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav li {
-  float: left;
-}
-
-nav a:visited {
-  display: block;
-  width: 160px;
-  background-color: red;
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding: 5px;
-}
-
-nav a:link {
-  display: block;
-  width: 160px;
-  background-color: red;
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding: 5px;
-}
-
-nav a:hover {
-  background-color: lightblue;
-}
-
-nav a:active {
-  background-color: lightblue;
-}
 
 <!--Dette skal lige kigges på-->
 #header {
@@ -56,8 +14,8 @@ nav a:active {
 /*Dette er alle de ting som sker under forsiden*/
 
 #loaded {
-  height: 20vh;
-  background-color: red;
+  height: 50vh;
+  background-color: lightblue;
 }
 
 #flex-section {
@@ -66,9 +24,9 @@ nav a:active {
   margin: auto;
 }
 
-#loaded h2 {
-  color: black;
-  text-align: center;
+#flex-section h2 {
+  margin-top: 20vh;
+  text-align: left;
 }
 
 #forumtekst {
@@ -170,7 +128,7 @@ nav a:active {
 
 .footer {
   padding: 3vh;
-  height: 20vh;
+  height: 25vh;
   background-color: green;
 }
 
