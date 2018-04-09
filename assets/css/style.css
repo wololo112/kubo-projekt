@@ -4,6 +4,48 @@ body {
   font-weight: 300;
 }
 
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  float: left;
+}
+
+nav a:visited {
+  display: block;
+  width: 160px;
+  background-color: yellowgreen;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+nav a:link {
+  display: block;
+  width: 160px;
+  background-color: yellowgreen;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+nav a:hover {
+  background-color: green;
+}
+
+nav a:active {
+  background-color: green;
+}
+
 #header {
   height: 20vh;
   background-color: #b49dc8;
@@ -107,4 +149,10 @@ body {
 
 .twitter {
 
+}
+
+#test {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
 }
