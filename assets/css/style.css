@@ -4,11 +4,8 @@ body {
   font-weight: 300;
 }
 
-<<<<<<< HEAD
 <!--Dette er navigationsbaren-->
 
-=======
->>>>>>> 9dbaec08f41ee5f4aeba631fb9be42ae7fec3a94
 nav ul {
   list-style: none;
   margin: 0;
@@ -66,7 +63,6 @@ nav a:active {
   display: flex;
   flex-direction: center;
   margin: auto;
-  max-width: 600px;
 }
 
 #loaded h2 {
@@ -83,7 +79,6 @@ nav a:active {
   display: flex;
   flex-direction: row;
   margin: auto;
-  max-width: 1100px;
 }
 
 
@@ -97,7 +92,7 @@ nav a:active {
 }
 
 #calltoaction ul {
-  
+
   justify-content: center
 }
 
@@ -105,7 +100,6 @@ nav a:active {
   display: flex;
   flex-direction: row;
   margin: auto;
-  max-width: 600px;
 }
 
 #introvideo {
@@ -117,55 +111,38 @@ nav a:active {
   display: flex;
   flex-direction: row;
   margin: auto;
-  max-width: 600px;
 }
 
-<<<<<<< HEAD
 <!--Det er omkring nydebat som findes under matematik, sprog og andrefag html-->
 
-=======
->>>>>>> 9dbaec08f41ee5f4aeba631fb9be42ae7fec3a94
 #flex-section5 {
   display: flex;
   flex-direction: row;
   margin: auto;
-  max-width: 600px;
 }
-<<<<<<< HEAD
 
 <!--Det er inde for matematikdebat-->
 
-=======
->>>>>>> 9dbaec08f41ee5f4aeba631fb9be42ae7fec3a94
 #flex-section6 {
   display: flex;
   flex-direction: row;
   margin: auto;
-  max-width: 600px;
 }
-<<<<<<< HEAD
 
 <!--Det er inde for andrefagdebat-->
 
-=======
->>>>>>> 9dbaec08f41ee5f4aeba631fb9be42ae7fec3a94
 #flex-section7 {
   display: flex;
   flex-direction: row;
   margin: auto;
-  max-width: 600px;
 }
-<<<<<<< HEAD
 
 <!--Det er inde for sprodebat-->
 
-=======
->>>>>>> 9dbaec08f41ee5f4aeba631fb9be42ae7fec3a94
 #flex-section8 {
   display: flex;
   flex-direction: row;
   margin: auto;
-  max-width: 600px;
 }
 
 <!--Dette er oprette en ny debat og søge efter debatter for alle fag-->
@@ -216,10 +193,4 @@ nav a:active {
 
 .twitter {
 
-}
-
-#test {
-  display: flex;
-  flex-direction: row;
-  margin: auto;
 }
