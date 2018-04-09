@@ -1,70 +1,62 @@
 body {
   margin: 0;
-}
-
-nav {
-  margin-top: -1.3%;
-  margin-left: 5%;
-  margin-right: 10%;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: flex-end;
-}
-
-nav a {
-  text-decoration: none;
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 900;
-  color: #fff;
-  font-size: 2vh;
-  cursor: pointer;
-}
-
-nav li {
-  padding-right: 1%;
-  z-index: 2;
-}
-
-nav li:last-child {
-  padding-right: 0;
-}
-
-nav a:hover{
-    color: #9f2429;
-}
-
-nav a:active {
-    color: #D1C7B9;
+  padding: 0;
+  font-weight: 300;
 }
 
 #header {
-  height: 10vh;
+  height: 20vh;
   background-color: #b49dc8;
 }
 
 <!--Dette er alle de ting som sker under forsiden-->
 
-.loaded {
-  height: 20vh;
+#loaded {
   background-color: red;
 }
 
-.forumtekst {
+#flex-section {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+#loaded h2 {
+  color: black;
+}
+
+#forumtekst {
   height: 20vh;
   background-color: blue;
 }
 
-.calltoaction {
+#flex-section2 {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+
+#calltoaction {
   height: 20vh;
   background-color: yellow;
 }
 
-.introvideo {
-  height: 20vh;
+#flex-section3 {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+#introvideo {
+  height: 35vh;
   background-color: purple;
+}
+
+#flex-section4 {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
 }
 
 <!--Dette er oprette en ny debat og søge efter debatter for alle fag-->
@@ -92,51 +84,27 @@ nav a:active {
 <!--Dette er footer, FAQ og social links-->
 
 .footer {
-  height: 10vh;
+  padding: 3vh;
+  height: 50vh;
   background-color: green;
 }
 
 .facebook {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
+
 }
 
 .instagram {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
+
 }
 
 .linkedin {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
+
 }
 
 .youtube {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
+
 }
 
 .twitter {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
+
 }
