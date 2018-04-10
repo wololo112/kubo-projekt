@@ -3,12 +3,39 @@ body {
   padding: 0;
 }
 
-
-
-<!--Dette skal lige kigges på-->
 #header {
-  height: 20vh;
-  background-color: #b49dc8;
+  background-color: white;
+  overflow: hidden;
+}
+
+#header a {
+  float: left;
+  color: f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 16px;
+  font-size; 17px;
+}
+
+#header a:hover {
+  background-color: red;
+  color: black;
+}
+
+#header a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#header li {
+  float: left;
 }
 
 /*Dette er alle de ting som sker under forsiden*/
@@ -109,7 +136,9 @@ body {
   background-color: #8888;
 }
 
-.matematikdebat {
+/*Dette er søgningen mellem de forskellige fag*/
+
+#matematikdebat {
   height: 40vh;
   background-color: #b49dc8;
 }

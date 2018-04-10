@@ -7,7 +7,7 @@ function load() { { <!--Tester rundt-->
   var storageValue = localStorage.getItem("opgavetitel");
 }
 
-<!--Dette er en local storage funktion-->
+// local storage
 
 function getData() {
   var name = document.getElementById("opgavetitel").value;
@@ -22,3 +22,18 @@ function getData() {
   document.getElementById("succesbox").style.display="block";
   document.getElementById("succesbox").innerHTML="Welcome: " + name + " You have now logged in succesfully"
 }
+
+// Laver en søgebar -> https://www.youtube.com/watch?v=3NG8zy0ywIk <-
+const søgebar = document.forms['search'].querySelector('input');
+search.addEventListener('keyup',function(e){
+  const term = e.target.value.toLowerCase();
+  const forums = list.getElementByTagName(li);
+  Array.from(forums).forEach(function(forum){
+    const title = forums.firstElementChild.textContent; //titlen af et forum
+    if(title.toLowerCase().indexOf(term) !=-1){ //Metoder der tjekker
+      forum.style.display = 'block';
+    } else {v
+      forum.style.display = 'none';
+    }
+  })
+})
