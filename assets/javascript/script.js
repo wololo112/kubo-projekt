@@ -1,9 +1,9 @@
-function Publicher { <!--Tester rundt-->
+function Publicher { //Tester rundt//
   var fieldValue = document.getElementById("opgavetitel").value
   localStorage.setItem('opgavetitel', fieldValue);
 }
 
-function load() { { <!--Tester rundt-->
+function load() { { //Tester rundt//
   var storageValue = localStorage.getItem("opgavetitel");
 }
 
@@ -24,7 +24,7 @@ function getData() {
 }
 
 // Laver en søgebar -> https://www.youtube.com/watch?v=3NG8zy0ywIk <-
-const søgebar = document.forms['search'].querySelector('input');
+const search = document.forms['search'].querySelector('input');
 search.addEventListener('keyup',function(e){
   const term = e.target.value.toLowerCase();
   const forums = list.getElementByTagName(li);

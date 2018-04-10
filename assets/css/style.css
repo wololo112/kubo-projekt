@@ -1,6 +1,13 @@
 body {
-  margin: 0;
-  padding: 0;
+
+}
+
+#wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width:960px;
 }
 
 #header {
@@ -13,7 +20,7 @@ body {
   color: f2f2f2;
   text-align: center;
   text-decoration: none;
-  padding: 14px 16px;
+  padding: 10px 15.15px;
   font-size; 17px;
 }
 
@@ -38,6 +45,12 @@ body {
   float: left;
 }
 
+#header .current {
+  background-color: yellow;
+}
+
+
+
 /*Dette er alle de ting som sker under forsiden*/
 
 #loaded {
@@ -52,8 +65,9 @@ body {
 }
 
 #flex-section h2 {
-  margin-top: 20vh;
-  text-align: left;
+  margin-top: 25vh;
+  margin-left: 25vh;
+  text-align: center;
 }
 
 #forumtekst {
@@ -67,17 +81,15 @@ body {
   margin: auto;
 }
 
-#calltoaction {
-  height: 20vh;
-  background-color: yellow;
-}
-
-#calltoaction h2 {
+#flex-section2 h2{
+  margin-top: 5vh;
+  margin-left: 22vh;
   text-align: center;
 }
 
-#calltoaction ul {
-  justify-content: center
+#calltoaction {
+  height: 35vh;
+  background-color: yellow;
 }
 
 #flex-section3 {
@@ -86,8 +98,20 @@ body {
   margin: auto;
 }
 
+#flex-section3 h2 {
+  margin-top: 10vh;
+  margin-left: 60vh;
+  text-align: center;
+}
+
+#flex-section3 ul {
+  margin-top: 20vh;
+  margin-left: -30vh;
+}
+
+
 #introvideo {
-  height: 35vh;
+  height: 70vh;
   background-color: purple;
 }
 
@@ -95,6 +119,11 @@ body {
   display: flex;
   flex-direction: row;
   margin: auto;
+}
+
+#flex-section4 h2 {
+  margin-top: 10vh;
+  margin-left: 60vh;
 }
 
 /*Det er omkring nydebat som findes under matematik, sprog og andrefag html*/
@@ -157,26 +186,55 @@ body {
 
 .footer {
   padding: 3vh;
-  height: 25vh;
+  height: 10vh;
   background-color: green;
 }
 
-.facebook {
+#socialemedier {
+  margin-top: 2vh;
+  margin-left: 100vh;
+}
+
+#kedufooter {
+  margin-top: -7vh;
+  margin-left: 135vh;
+}
+
+#faq {
+  margin-top: -5vh;
+}
+
+#nyhedsbrevet p {
+  margin-top: 1vh;
+  margin-left: -3vh
+}
+
+#nyhedsbrevet {
+  margin-top: -3vh;
+  margin-left: 55vh;
+}
+
+#socialmedier {
+  margin-top: 10vh;
+  margin-left: 70vh;
+}
+
+#facebook {
 
 }
 
-.instagram {
+#instagram {
 
 }
 
-.linkedin {
+#linkedin {
 
 }
 
-.youtube {
+#youtube {
 
 }
 
-.twitter {
+#twitter {
 
 }
