@@ -1,7 +1,6 @@
 body {
-
 }
-
+/*Dette er her at selve at elementerne er i*/
 #wrapper {
   margin: 0px auto;
   padding-left: 10px;
@@ -9,10 +8,14 @@ body {
   max-width:960px;
 }
 
+/*Dette er selve navigationsbaren*/
+
 #header {
-  background-color: white;
+  background-color: gray;
   overflow: hidden;
 }
+
+/*Dette er det specifikke element a-tagget*/
 
 #header a {
   float: left;
@@ -33,12 +36,16 @@ body {
   color: white;
 }
 
+/*Dette er det specifikke element ul-tagget*/
+
 #header ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
+
+/*Dette er det specifikke element li-tagget*/
 
 #header li {
   float: left;
@@ -48,13 +55,18 @@ body {
   background-color: yellow;
 }
 
+/*Dette er logoet ved navigationsbaren*/
 
+#logo {
+  max-width: 70%;
+  max-height: 45%;
+}
 
 /*Dette er alle de ting som sker under forsiden*/
 
 #loaded {
   height: 50vh;
-  background-color: lightblue;
+  background-color: yellow;
 }
 
 #flex-section {
@@ -71,7 +83,7 @@ body {
 
 #forumtekst {
   height: 20vh;
-  background-color: blue;
+  background-color: white;
 }
 
 #flex-section2 {
@@ -88,7 +100,7 @@ body {
 
 #calltoaction {
   height: 35vh;
-  background-color: yellow;
+  background-color: gray;
 }
 
 #flex-section3 {
@@ -142,7 +154,8 @@ body {
 }
 
 #flex-section6 h2 {
-  margin-top:
+  margin-top: 2vh;
+  margin-left: 65vh;
 }
 
 /*Det er inde for andrefagdebat*/
@@ -169,6 +182,7 @@ body {
 }
 
 /*Dette er søgningen mellem de forskellige fag*/
+/*De findes for selve filerne for matematik, andresfag & sprog*/
 
 #matematikdebat {
   height: 50vh;
@@ -190,7 +204,7 @@ body {
 .footer {
   padding: 3vh;
   height: 10vh;
-  background-color: green;
+  background-color: gray;
 }
 
 /*Sociale medier ved footeren*/
@@ -205,6 +219,11 @@ body {
 #kedufooter {
   margin-top: -7vh;
   margin-left: 135vh;
+}
+
+#kedufooterlogo {
+  max-width: 50%;
+  max-height: 50%;
 }
 
 /*FAQ ved footeren*/
@@ -224,6 +243,8 @@ body {
   margin-top: -3vh;
   margin-left: 55vh;
 }
+
+/*Dette er for alle de billeder af de sociale medier i footeren*/
 
 #facebook {
 

@@ -1,28 +1,3 @@
-function Publicher { //Tester rundt//
-  var fieldValue = document.getElementById("opgavetitel").value
-  localStorage.setItem('opgavetitel', fieldValue);
-}
-
-function load() { { //Tester rundt//
-  var storageValue = localStorage.getItem("opgavetitel");
-}
-
-// local storage
-
-function getData() {
-  var name = document.getElementById("opgavetitel").value;
-  var name = document.getElementById("emneord").value;
-  var name = document.getElementById("lektionslængde").value;
-  var name = document.getElementById("beskrivelse").value;
-
-  console.log("opgavetitel");
-
-  alert("Name: " + opgavetitel + emneord + lektionslængde + beskrivelse);
-
-  document.getElementById("succesbox").style.display="block";
-  document.getElementById("succesbox").innerHTML="Welcome: " + name + " You have now logged in succesfully"
-}
-
 // Laver en søgebar -> https://www.youtube.com/watch?v=3NG8zy0ywIk <-
 const search = document.forms['search'].querySelector('input');
 search.addEventListener('keyup',function(e){
@@ -37,3 +12,8 @@ search.addEventListener('keyup',function(e){
     }
   })
 })
+
+//Oprette et blogindlæg
+function submitblog(text, time, important) {
+
+}
