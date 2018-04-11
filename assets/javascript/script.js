@@ -14,6 +14,18 @@ search.addEventListener('keyup',function(e){
 })
 
 //Oprette et blogindlæg
-function submitblog(text, time, important) {
+var opgavetitel = document.getElementById("");
+var emneord = document.getElementById("");
+var lektionslængde = document.getElementById("");
+var beskrivelse = document.getElementById("");
 
+//Alertbox til registrering af newsletters
+function validation() {
+  if (document.getElementById("nyhedsbrev").value == "") {
+    alert("Du har ikke indtastet nogen emailadresse");
+    return false;
+  } else {
+    alert("Du er nu blevet tilmeldt nyhedsbrevet");
+    return true;
+  }
 }
