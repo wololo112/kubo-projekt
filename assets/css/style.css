@@ -3,8 +3,7 @@ body {
 }
 
 #wrapper {
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0px auto;
   padding-left: 10px;
   padding-right: 10px;
   max-width:960px;
@@ -134,7 +133,7 @@ body {
   margin: auto;
 }
 
-<!--Det er inde for matematikdebat-->
+/*Det er inde for matematikdebat*/
 
 #flex-section6 {
   display: flex;
@@ -142,7 +141,11 @@ body {
   margin: auto;
 }
 
-<!--Det er inde for andrefagdebat-->
+#flex-section6 h2 {
+  margin-top:
+}
+
+/*Det er inde for andrefagdebat*/
 
 #flex-section7 {
   display: flex;
@@ -150,7 +153,7 @@ body {
   margin: auto;
 }
 
-<!--Det er inde for sprogdebat-->
+/*Det er inde for sprogdebat*/
 
 #flex-section8 {
   display: flex;
@@ -168,7 +171,7 @@ body {
 /*Dette er søgningen mellem de forskellige fag*/
 
 #matematikdebat {
-  height: 40vh;
+  height: 50vh;
   background-color: #b49dc8;
 }
 
@@ -190,19 +193,27 @@ body {
   background-color: green;
 }
 
+/*Sociale medier ved footeren*/
+
 #socialemedier {
   margin-top: 2vh;
   margin-left: 100vh;
 }
+
+/*KUDOs logo ved footeren */
 
 #kedufooter {
   margin-top: -7vh;
   margin-left: 135vh;
 }
 
+/*FAQ ved footeren*/
+
 #faq {
   margin-top: -5vh;
 }
+
+/* Nyhedsbrevet i footeren */
 
 #nyhedsbrevet p {
   margin-top: 1vh;
@@ -212,11 +223,6 @@ body {
 #nyhedsbrevet {
   margin-top: -3vh;
   margin-left: 55vh;
-}
-
-#socialmedier {
-  margin-top: 10vh;
-  margin-left: 70vh;
 }
 
 #facebook {
