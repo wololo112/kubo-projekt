@@ -1,23 +1,102 @@
-// Laver en søgebar -> https://www.youtube.com/watch?v=3NG8zy0ywIk <-
-const search = document.forms['search'].querySelector('input');
-search.addEventListener('keyup',function(e){
-  const term = e.target.value.toLowerCase();
-  const forums = list.getElementByTagName(li);
-  Array.from(forums).forEach(function(forum){
-    const title = forums.firstElementChild.textContent; //titlen af et forum
-    if(title.toLowerCase().indexOf(term) !=-1){ //Metoder der tjekker
-      forum.style.display = 'block';
-    } else {v
-      forum.style.display = 'none';
-    }
-  })
-})
+//Vi opretter en opgave
+function opretopgave() {
+  var opgavetitel = document.getElementById('opgavetitel').value;
+  var emneord = document.getElementById('emneord').value;
+  var lektionslængde = document.getElementById('lektionslængde').value;
+  var beskrivelse = document.getElementById('beskrivelse').value;
+  var klassetrin = document.getElementById('klassetrin').value;
 
-//Oprette et blogindlæg
-var opgavetitel = document.getElementById("");
-var emneord = document.getElementById("");
-var lektionslængde = document.getElementById("");
-var beskrivelse = document.getElementById("");
+//Vi validerer om alle variabler kommer med info
+  if (opgavetitel && emneord && lektionslængde && beskrivelse && klassetrin){
+    var opgavearray = { //venstre siden af colon af navnet, og højresiden er værdien
+      opgavetitel : opgavetitel,
+      emneord : emneord,
+      lektionslængde : lektionslængde,
+      beskrivelse : beskrivelse,
+      klassetrin : klassetrin
+    };
+    setglobalvalue(opgavearray); //Sender informationerne videre (altså indholdet i opgavearray) til global funktionen
+  } else {
+    console.log("Der er noget som mangler");
+  }
+}
+
+//Laver en global handler, der håndterer local host
+function setglobalvalue(obj) {
+  obj = obj || null; // Vi sætter objektet til at være et objekt eller null, da det er lettere at arbejde med i stedet for undefined.
+  if(obj !== null){ //Data må ikke være lige med null, sikrer at data er sendt igennem obj
+    var getlocalstorage = localStorage.getItem("opgave"); //Her er opgave filnavnet i localstorage
+    var mylocal = [];
+    if (getlocalstorage !== null){
+      var mylocal = JSON.parse(getlocalstorage);
+    }
+    mylocal.push(obj);
+    var json = JSON.stringify(mylocal);
+    localStorage.setItem("opgave",json);
+    visopgaver(mylocal); //det som vi overskrider ved localstorage, vises her, da vi sender objektet videre.
+  }
+}
+
+//Vi ønsker at vise det visuelt på hjemmesiden
+function visopgaver(obj) {
+
+  /*
+  2 nedenstående linjer, nulstiller det som er i divs,
+   og sikrer sig at det nye  kommer med, samt det som var der før
+   */
+  var getdivlocation = document.getElementById("debatvisning");
+  getdivlocation.innerHTML = "";
+
+  obj = obj || null; // Vi sætter objektet til at være et objekt eller null, da det er lettere at arbejde med i stedet for undefined.
+  if(obj == null) {
+    var getlocalstorage = localStorage.getItem("opgave");
+    var obj = JSON.parse(getlocalstorage); //Henter local storage hvis objektet ikke eksiterer og overskriver den
+  }
+  if(typeof obj !== "undefined") { //typeof viser hvilken type af objekt det er, og hvis det ikke findes vil den altid være undefined da det ikke er klacificeret som noget. Sådan sikrer vi os at vores objekt alt er noget og ikek ingenting.
+    obj.forEach(function(arg,ii){
+      if (arg.opgavetitel && arg.emneord && arg.lektionslængde && arg.beskrivelse && arg.klassetrin) {
+        var itemBox = document.createElement("div"); // Man opretter div
+
+        var itemBoxTitle = document.createElement("h2"); //opretter h2
+        itemBoxTitle.innerHTML = arg.opgavetitel;
+        itemBox .appendChild(itemBoxTitle);
+
+        var itemBoxSub = document.createElement("span"); //opretter span
+        itemBoxSub.innerHTML = arg.emneord;
+        itemBox.appendChild(itemBoxSub);
+
+        var itemBoxClass= document.createElement("span"); //opretter span
+        itemBoxClass.innerHTML = arg.lektionslængde;
+        itemBox.appendChild(itemBoxClass);
+
+        var itemBoxTime= document.createElement("span"); //opretter span
+        itemBoxTime.innerHTML = arg.klassetrin;
+        itemBox.appendChild(itemBoxTime);
+
+        var itemBoxDesc = document.createElement("p"); //opretter paragraf
+        itemBoxDesc .innerHTML = arg.beskrivelse;
+        itemBox.appendChild(itemBoxDesc);
+
+        getdivlocation.appendChild(itemBox); //Her viser vi det visuelt
+      } else {
+        console.log("Der er sket en fejl ved et af argumenterne ved if statement");
+      }
+    });
+  }
+}
+
+/*
+  Her laver vi funktionen til publisher knappen.
+*/
+
+window.onload = function()
+{
+  visopgaver();
+  var mybutton = document.getElementById("detteharandreikke");
+  mybutton.addEventListener("click",function(){
+    opretopgave();
+  });
+}
 
 //Alertbox til registrering af newsletters
 function validation() {
@@ -29,3 +108,14 @@ function validation() {
     return true;
   }
 }
+//JSON -> tekstformat af et array eller et objektarray (tektfil til at flytte et array)
+//Hvis man laver et objekt, så kan man sende dataen, så det bliver præcis det samme objekt med samme data.
+
+//modal -> dialog boksen der popper op.
+
+//input der smides ind til et array, der indeholder data. Det array laver man om til JSON,
+//som så smides ind i browseren (local storage), som man så kan smide tilbage som et array.
+
+//apendChild -> laver et div i en div.
+
+//Lav en opskrift når du koder generelt

@@ -8,8 +8,8 @@
     <script src="assets/javascript/script.js"></script>
   </head>
   <body>
+        <div id="wrapper">
   <main>
-    <div id="wrapper">
     <header id="header">
       <nav>
         <ul>
@@ -29,28 +29,29 @@
       <div id="flex-section5">
       <form>
         <input type="text" name="opgavetitel" id="opgavetitel" placeholder="Opgavetitel">
-        <input type="test" name="emneord" id="emneord" placeholder="Indtast emneord">
-        <input type="test" name="lektionslængde" id="lektionslængde" placeholder="Indtast lektionslængde">
-        <input type="test" name="beskrivelse" id="beskrivelse" placeholder="Beskrivelse">
-        <select>
+        <input type="text" name="emneord" id="emneord" placeholder="Indtast emneord">
+        <input type="text" name="lektionslængde" id="lektionslængde" placeholder="Indtast lektionslængde">
+        <input type="text" name="beskrivelse" id="beskrivelse" placeholder="Beskrivelse">
+        <select id="klassetrin">
           <option>
             Vælg klassetrin
           </option>
-          <option value="1">
+          <option value="klasse1">
             1. klasse
           </option>
-          <option value="2">
+          <option value="klasse2">
             2. klasse
           </option>
-          <option value="3">
+          <option value="klasse3">
             3. klasse
           </option>
          </select>
-        <input type="file" id="uploadfile" name="" placeholder="Upload fil">
-        <input type="submit" id="submit" name="" value="Publicher">
+        <!--<input type="file" id="uploadfile" name="" placeholder="Upload fil">--> <!--Dette kan ikke lade sig gøre i localstorage-->
+        <input type="button" id="detteharandreikke" value="Publicher">
       </form>
     </div>
   </div>
+  <div id="debatvisning"></div>
     <div id="matematikdebat">
       <div id="flex-section6">
       <h2>Matematik</h2>
@@ -87,7 +88,7 @@
       <a href="https://twitter.com/kubo_robot?lang=en" target="_blank"><img src="assets/img/facebook" id="twitter" alt="twitter"></a>
     </div>
     </footer>
-    </div>
   </main>
+      </div>
   </body>
 </html>
