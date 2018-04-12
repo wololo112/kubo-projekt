@@ -28,33 +28,34 @@
     <div class="nydebat">
       <div id="flex-section5">
       <form>
-        <input type="text" name="" placeholder="Opgavetitel">
-        <input type="test" name="" placeholder="Indtast emneord">
-        <input type="test" name="" placeholder="Indtast lektionslængde">
-        <input type="test" name="" placeholder="Beskrivelse">
-        <select>
+        <input type="text" name="opgavetitel" id="opgavetitel" placeholder="Opgavetitel">
+        <input type="text" name="emneord" id="emneord" placeholder="Indtast emneord">
+        <input type="text" name="lektionslængde" id="lektionslængde" placeholder="Indtast lektionslængde">
+        <input type="text" name="beskrivelse" id="beskrivelse" placeholder="Beskrivelse">
+        <select id="klassetrin">
           <option>
             Vælg klassetrin
           </option>
-          <option value="1">
+          <option value="klasse1">
             1. klasse
           </option>
-          <option value="2">
+          <option value="klasse2">
             2. klasse
           </option>
-          <option value="3">
+          <option value="klasse3">
             3. klasse
           </option>
          </select>
-        <input type="file" name="" placeholder="Upload fil">
-        <input type="submit" name="" value="Publicher">
+        <!--<input type="file" id="uploadfile" name="" placeholder="Upload fil">--> <!--Dette kan ikke lade sig gøre i localstorage-->
+        <input type="button" id="detteharandreikke" value="Publicher">
       </form>
     </div>
-    </div>
-    <div class="sprogdebat">
-      <div id="flex-section8">
-      <h2>Sprog</h2>
-      <form>
+  </div>
+  <div id="debatvisning"></div>
+    <div id="matematikdebat">
+      <div id="flex-section6">
+      <h2>Matematik</h2>
+        <form>
         <p>Klasse</p>
         <input type="text" name="" placeholder="Alle">
         <p>Emne</p>
@@ -62,7 +63,7 @@
         <p>Sorter efter</p>
         <input type="text" name="" placeholder="Seneste emner">
       </form>
-    </div>
+     </div>
     </div>
     <footer class="footer">
      <div id="kubo">

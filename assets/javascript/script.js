@@ -98,6 +98,11 @@ window.onload = function()
   });
 }
 
+//Funktion der kan sortere mellem ens opslag
+function søgopgave() {
+
+}
+
 //Alertbox til registrering af newsletters
 function validation() {
   if (document.getElementById("nyhedsbrev").value == "") {
@@ -108,14 +113,3 @@ function validation() {
     return true;
   }
 }
-//JSON -> tekstformat af et array eller et objektarray (tektfil til at flytte et array)
-//Hvis man laver et objekt, så kan man sende dataen, så det bliver præcis det samme objekt med samme data.
-
-//modal -> dialog boksen der popper op.
-
-//input der smides ind til et array, der indeholder data. Det array laver man om til JSON,
-//som så smides ind i browseren (local storage), som man så kan smide tilbage som et array.
-
-//apendChild -> laver et div i en div.
-
-//Lav en opskrift når du koder generelt
