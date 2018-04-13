@@ -220,7 +220,6 @@ body {
 #flex-section5 {
   display: flex;
   flex-direction: row;
-  margin: auto;
   float: right;
 }
 
@@ -230,11 +229,14 @@ body {
   display: flex;
   flex-direction: row;
   margin: auto;
+
 }
 
 #flex-section6 h2 {
-  margin-top: 2vh;
-  margin-left: 65vh;
+    width: 100%;
+  text-align: center;
+  color: #044c7f;
+
 }
 
 /*Det er inde for andrefagdebat*/
@@ -268,8 +270,8 @@ body {
 /*De findes for selve filerne for matematik, andresfag & sprog*/
 
 #matematikdebat {
-  height: 50vh;
-  background-color: #b49dc8;
+  height: 30vh;
+  background-color: white;
 }
 
 .sprogdebat {
