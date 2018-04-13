@@ -98,6 +98,15 @@ body {
     content: center, center;
 }
 
+#headermatematik {
+    height: 50vh;
+    background-color: yellow;
+    background-image: url("../img/imgtwo.jpg");
+    background-size: cover;
+    height: 400px;
+    content: center, center;
+}
+
 #flex-section {
   display: flex;
   flex-direction: row;
@@ -317,6 +326,10 @@ body {
   margin-top: -3vh;
   color: #044c7f;
   text-align: center;
+}
+
+#tilmeld {
+  color: white;
 }
 
 #flex-section {
