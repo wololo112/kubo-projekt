@@ -77,6 +77,20 @@ body {
   text-align: center,center;
 }
 
+#trappeet {
+  margin-left: 250px;
+  color: #044c7f;
+}
+
+#trappeto {
+  margin-left: 400px;
+  color: #044c7f;
+}
+
+#trappetre {
+  margin-left: 530px;
+  color: #044c7f;
+}
 
 /*Dette er selve dropdown menuen til profilen i vores navigationsmenu */
 
@@ -153,8 +167,8 @@ body {
 }
 
 .buttons button {
-  width: 100px;
-  height: 50px;
+  width: 160px;
+  height: 40px;
   background: #00a19b;
   border-radius: 16px;
   color: white;
@@ -206,7 +220,7 @@ body {
 #flex-section5 {
   display: flex;
   flex-direction: row;
-  margin: auto;
+  float: right;
 }
 
 /*Det er inde for matematikdebat*/
@@ -215,11 +229,14 @@ body {
   display: flex;
   flex-direction: row;
   margin: auto;
+
 }
 
 #flex-section6 h2 {
-  margin-top: 2vh;
-  margin-left: 65vh;
+    width: 100%;
+  text-align: center;
+  color: #044c7f;
+
 }
 
 /*Det er inde for andrefagdebat*/
@@ -242,16 +259,19 @@ body {
 /*Dette er oprette en ny debat og søge efter debatter for alle fag*/
 
 .nydebat {
-  height: 70vh;
-  background-color: #8888;
+  height: 30vh;
+  width: 400px;
+  float: right;
+  margin-right: 150px;
+  background-color: white;
 }
 
 /*Dette er søgningen mellem de forskellige fag*/
 /*De findes for selve filerne for matematik, andresfag & sprog*/
 
 #matematikdebat {
-  height: 50vh;
-  background-color: #b49dc8;
+  height: 30vh;
+  background-color: white;
 }
 
 .sprogdebat {
@@ -296,14 +316,14 @@ body {
 /*KUDOs logo ved footeren */
 
 #kedufooter {
-  margin-top: -7vh;
+  margin-top: -6vh;
   margin-left: 147vh;
   padding-left: 65px;
 }
 
 #kedufooterlogo {
-  max-width: 50%;
-  max-height: 50%;
+  max-width: 60%;
+  max-height: 60%;
 }
 
 /*FAQ ved footeren*/
