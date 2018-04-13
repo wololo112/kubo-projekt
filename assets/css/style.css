@@ -77,6 +77,20 @@ body {
   text-align: center,center;
 }
 
+#trappeet {
+  margin-left: 250px;
+  color: #044c7f;
+}
+
+#trappeto {
+  margin-left: 400px;
+  color: #044c7f;
+}
+
+#trappetre {
+  margin-left: 530px;
+  color: #044c7f;
+}
 
 /*Dette er selve dropdown menuen til profilen i vores navigationsmenu */
 
@@ -153,8 +167,8 @@ body {
 }
 
 .buttons button {
-  width: 100px;
-  height: 50px;
+  width: 160px;
+  height: 40px;
   background: #00a19b;
   border-radius: 16px;
   color: white;
@@ -207,6 +221,7 @@ body {
   display: flex;
   flex-direction: row;
   margin: auto;
+  float: right;
 }
 
 /*Det er inde for matematikdebat*/
@@ -242,8 +257,11 @@ body {
 /*Dette er oprette en ny debat og søge efter debatter for alle fag*/
 
 .nydebat {
-  height: 70vh;
-  background-color: #8888;
+  height: 30vh;
+  width: 400px;
+  float: right;
+  margin-right: 150px;
+  background-color: white;
 }
 
 /*Dette er søgningen mellem de forskellige fag*/
@@ -296,14 +314,14 @@ body {
 /*KUDOs logo ved footeren */
 
 #kedufooter {
-  margin-top: -7vh;
+  margin-top: -6vh;
   margin-left: 147vh;
   padding-left: 65px;
 }
 
 #kedufooterlogo {
-  max-width: 50%;
-  max-height: 50%;
+  max-width: 60%;
+  max-height: 60%;
 }
 
 /*FAQ ved footeren*/
