@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KEDU Matematik</title>
+    <title>KEDU Matematik opslag</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script src="assets/javascript/script.js"></script>
   </head>
   <body>
+        <div id="wrapper">
   <main>
-    <div id="wrapper">
     <header id="header">
       <nav>
         <ul>
@@ -25,59 +25,38 @@
           <li><a href="profil.html">Se profil</a></li>
           <li><a href="redigerprofil.html">Rediger profil</a></li>
           <li><a href="index.html">Log ud</a></li>
+        </div>
+      </li>
         </ul>
       </nav>
     </header>
-    <div class="nydebat">
-      <div id="flex-section5">
-      <form>
-        <input type="text" name="opgavetitel" id="opgavetitel" placeholder="Opgavetitel">
-        <input type="text" name="emneord" id="emneord" placeholder="Indtast emneord">
-        <input type="text" name="lektionslængde" id="lektionslængde" placeholder="Indtast lektionslængde">
-        <input type="text" name="beskrivelse" id="beskrivelse" placeholder="Beskrivelse">
-        <select id="klassetrin">
-          <option>
-            Vælg klassetrin
-          </option>
-          <option value="klasse1">
-            1. klasse
-          </option>
-          <option value="klasse2">
-            2. klasse
-          </option>
-          <option value="klasse3">
-            3. klasse
-          </option>
-         </select>
-        <!--<input type="file" id="uploadfile" name="" placeholder="Upload fil">--> <!--Dette kan ikke lade sig gøre i localstorage-->
-        <input type="button" id="detteharandreikke" value="Publicher">
-      </form>
+    <div class="matematikopslag">
+      <div id="flex-section9">
     </div>
   </div>
-  <div id="debatvisning"></div>
+  <div id="kommentarvisning"></div>
     <div id="matematikdebat">
-      <div id="flex-section6">
+      <div id="flex-section10">
       <h2>Matematik</h2>
         <form>
-          <select id="klassetrin">
-          <option>
-            Vælg klassetrin
-            <option value="klasse1">
-              1. klasse
+          <input type="text" name="skrivkommentar" id="skrivkommentar" placeholder="Skriv kommentar">
+          <select id="kommentarområde">
+            <option>
+              Vælg kommentarområde
             </option>
-            <option value="klasse2">
-              2. klasse
+            <option value="opgaven">
+              Spørgsmål til opgaven
             </option>
-            <option value="klasse3">
-              3. klasse
+            <option value="ændringer">
+              Forslag til ændringer
             </option>
-          </select>
-          </option>
-        <p>Emne</p>
-        <input type="text" name="" placeholder="Alle">
-        <p>Sorter efter</p>
-        <input type="text" name="" placeholder="Seneste emner">
-      </form>
+            <option value="andet">
+              Andet
+            </option>
+           </select>
+          <!--<input type="file" id="uploadfile" name="" placeholder="Upload fil">--> <!--Dette kan ikke lade sig gøre i localstorage-->
+          <input type="button" id="slåop" value="Slå op">
+        </form>
      </div>
     </div>
     <footer class="footer">

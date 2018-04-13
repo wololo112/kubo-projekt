@@ -7,8 +7,9 @@ body {
   margin: 0px auto;
   padding-left: 10px;
   padding-right: 10px;
-  max-width:960px;
+  max-width: 960px;
 }
+
 
 /*Dette er selve navigationsbaren*/
 
@@ -57,12 +58,15 @@ body {
   background-color: yellow;
 }
 
-/*Dette er logoet ved navigationsbaren*/
 
+/*Dette er selve dropdown menuen til profilen i vores navigationsmenu */
+
+/*Dette er logoet ved navigationsbaren*/
 #logo {
   max-width: 70%;
   max-height: 45%;
 }
+
 
 /*Dette er alle de ting som sker under forsiden*/
 
@@ -200,6 +204,20 @@ body {
   height: 40vh;
   background-color: #b49dc8;
 }
+
+/*Dette er i selve matematikopslags.html dokumentet, når man laver en kommentar*/
+#flex-section10 {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+.sprogdebat {
+  height: 60vh;
+  background-color: #b49dc8;
+}
+
+
 
 /*Dette er footer, FAQ og social links*/
 
