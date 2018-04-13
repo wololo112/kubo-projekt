@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEDU Matematik</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="assets/javascript/script.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <nav>
+        <ul>
+           <li><a href="kedulandingpage.html"><img src="assets/img/KEDU-LOGO.png" id="logo" alt="kagemad" width="70" height="45"></a></li>
+          <li><a class="current" href="matematik.html">Matematik</a></li>
+          <li><a href="sprog.html">Sprog</a></li>
+          <li><a href="andrefag.html">Andre Fag</a></li>
+          <li><input type="text" id="søgebar" placeholder="Skriv søgeord"/></li> <!--Der skal muligvis laves en button til denne-->
+          <li><a href="gemteposts.html"><img src="assets/img/gemteblogs" id="blog" alt="posts"></a></li>
+          <li><a href="indbakke.html"><img src="assets/img/beskeder" id="besked" alt="beskeder"></a></li>
+          <li><a href="notifikationer.html"><img src="assets/img/notifikation" id="notifikation" alt="notifikationer"></a></li>
+          <li><a href="profil">Profil</a></li>
+          <li><a href="profil.html">Se profil</a></li>
+          <li><a href="redigerprofil.html">Rediger profil</a></li>
+          <li><a href="index.html">Log ud</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="headermatematik">
+      <div id="trappeet">
+        <h2>Bliv inspireret</h2>
+      </div>
+      <div id="trappeto">
+        <h2>Få ny viden </h2>
+      </div>
+      <div id="trappetre">
+        <h2>Del erfaring</h2>
+          </div>
+          <div class="nydebat">
+            <div id="flex-section5">
+            <form>
+              <input type="text" name="opgavetitel" id="opgavetitel" placeholder="Opgavetitel">
+              <input type="text" name="emneord" id="emneord" placeholder="Indtast emneord">
+              <input type="text" name="lektionslængde" id="lektionslængde" placeholder="Indtast lektionslængde">
+              <input type="text" name="beskrivelse" id="beskrivelse" placeholder="Beskrivelse">
+              <select id="klassetrin">
+                <option>
+                  Vælg klassetrin
+                </option>
+                <option value="klasse1">
+                  1. klasse
+                </option>
+                <option value="klasse2">
+                  2. klasse
+                </option>
+                <option value="klasse3">
+                  3. klasse
+                </option>
+               </select>
+              <!--<input type="file" id="uploadfile" name="" placeholder="Upload fil">--> <!--Dette kan ikke lade sig gøre i localstorage-->
+              <input type="button" id="detteharandreikke" value="Publicher">
+            </form>
+          </div>
+        </div>
+    </div>
+  <div id="debatvisning"></div>
+    <div id="matematikdebat">
+      <div id="flex-section6">
+      <h2>Matematik</h2>
+        <form>
+          <select id="klassetrin">
+          <option>
+            Vælg klassetrin
+            <option value="klasse1">
+              1. klasse
+            </option>
+            <option value="klasse2">
+              2. klasse
+            </option>
+            <option value="klasse3">
+              3. klasse
+            </option>
+          </select>
+          </option>
+        <p>Emne</p>
+        <input type="text" name="" placeholder="Alle">
+        <p>Sorter efter</p>
+        <input type="text" name="" placeholder="Seneste emner">
+      </form>
+     </div>
+    </div>
+    <footer class="footer">
+     <div id="kubo">
+      <a href="https://kubo-robot.com/" target="_blank" id="kuboinformation">Læs om KUBO her</a>
+    </div>
+      <form id="nyhedsbrevet">
+        <p>Tilmeld dig nyhedsbrevet her, og følg med: </p>
+      <input type="email" id="nyhedsbrev" class="nyhedsbrev" placeholder="Indtast e-mail"/>
+      <input type="button" id="tilmeld" class="tilmeld" value="Tilmeld" onclick="return validation()">
+    </form>
+    <div id="faq">
+      <a href="faq.html" >FAQ</a>
+    </div>
+    <div id="kedufooter">
+      <a href="kedulandingpage.html"><img src="assets/img/KEDU-LOGO.png" alt="kagemad width="50" height="25""></a>
+    </div>
+    <div id="fa">
+        <a class="fa fa-facebook" target="_blank" href="https://www.facebook.com/KUBORobot/"></a>
+        <a class="fa fa-linkedin" target="_blank" href="https://linkedin.com/company/kubo-robot"></a>
+        <a class="fa fa-twitter" target="_blank" href="https://twitter.com/kubo_robot"></a>
+        <a class="fa fa-instagram" target="_blank" href="https://www.instagram.com/kubo_robotics/"></a>
+      </div>
+    </footer>
+  </body>
+</html>
