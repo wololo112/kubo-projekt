@@ -275,7 +275,7 @@ body {
   text-decoration: none;
   border-radius: 7px;
   margin: 38px;
-  flex-direction: column;
+  flex-direction: column-reverse;
 }
 
 .fa-facebook {
