@@ -86,8 +86,12 @@ body {
 /*Dette er alle de ting som sker under forsiden*/
 
 #loaded {
-  height: 50vh;
-  background-color: yellow;
+    height: 50vh;
+    background-color: yellow;
+    background-image: url("../img/imgone.jpg");
+    background-size: cover;
+    height: 400px;
+    content: center, center;
 }
 
 #flex-section {
