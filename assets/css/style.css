@@ -153,6 +153,11 @@ body {
   display: block;
 }
 
+#tilmeld {
+    background: #00a19b;
+    color: white;
+    border-radius: 16px;
+}
 
 #video {
   margin-top: 20vh;
