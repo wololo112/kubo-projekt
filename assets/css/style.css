@@ -154,9 +154,9 @@ body {
 }
 
 
-#introvideo {
-  height: 70vh;
-  background-color: purple;
+#video {
+  height: 50vh;
+
 }
 
 #flex-section4 {
@@ -165,9 +165,10 @@ body {
   margin: auto;
 }
 
-#flex-section4 h2 {
-  margin-top: 10vh;
-  margin-left: 60vh;
+#flex-section4 h3 {
+text-align: center;
+width: 100%;
+color: #044c7f;
 }
 
 /*Det er omkring nydebat som findes under matematik, sprog og andrefag html*/
@@ -197,6 +198,7 @@ body {
   display: flex;
   flex-direction: row;
   margin: auto;
+
 }
 
 /*Det er inde for sprogdebat*/
@@ -251,7 +253,7 @@ body {
 .footer {
   padding: 3vh;
   height: 10vh;
-  background-color: gray;
+  background-color: #f1f1f2;
 }
 
 /*Sociale medier ved footeren*/
@@ -265,7 +267,8 @@ body {
 
 #kedufooter {
   margin-top: -7vh;
-  margin-left: 135vh;
+  margin-left: 147vh;
+  padding-left: 65px;
 }
 
 #kedufooterlogo {
@@ -277,6 +280,8 @@ body {
 
 #faq {
   margin-top: -5vh;
+  font-size: 10px;
+  color: #044c7f;
 }
 
 /* Nyhedsbrevet i footeren */
@@ -284,11 +289,13 @@ body {
 #nyhedsbrevet p {
   margin-top: 1vh;
   margin-left: -3vh
+  color: #044c7f;
 }
 
 #nyhedsbrevet {
   margin-top: -3vh;
-  margin-left: 55vh;
+  color: #044c7f;
+  text-align: center;
 }
 
 #flex-section {
@@ -335,6 +342,11 @@ body {
     background: #f1f1f2;
     color: black;
     flex-direction: row-reverse;
+}
+
+#kubo {
+  color: #044c7f;
+  font-size: 12px;
 }
 
 /*Styling af div. tagget debatvisning, som viser ens blog*/
