@@ -266,26 +266,37 @@ body {
 
 /*Dette er for alle de billeder af de sociale medier i footeren*/
 
-#facebook {
-
+.fa {
+  background-color: #f1f1f2;
+  padding: 20px;
+  font-size: 30px;
+  width: 20px;
+  text-align: right;
+  text-decoration: none;
+  border-radius: 7px;
+  margin: 38px;
+  flex-direction: column;
 }
 
-#instagram {
-
+.fa-facebook {
+  background: #f1f1f2;
+  color: black;
 }
 
-#linkedin {
-
+.fa-linkedin {
+  background: #f1f1f2;
+  color: black;
 }
 
-#youtube {
-
+.fa-twitter {
+    background: #f1f1f2;
+    color: black;
 }
 
-#twitter {
-
+.fa-instagram {
+    background: #f1f1f2;
+    color: black;
 }
-
 
 /*Styling af div. tagget debatvisning, som viser ens blog*/
 #debatvisning {
