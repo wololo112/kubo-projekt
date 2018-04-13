@@ -21,10 +21,10 @@ function opretopgave() {
   }
 }
 
-//Laver en global handler, der håndterer local host
+//Laver en global handler, der håndterer local host for at kunne oprette opslag
 function setglobalvalue(obj) {
   obj = obj || null; // Vi sætter objektet til at være et objekt eller null, da det er lettere at arbejde med i stedet for undefined.
-  if(obj !== null){ //Data må ikke være lige med null, sikrer at data er sendt igennem obj
+  if(obj !== null){ //Data må ikke Wvære lige med null, sikrer at data er sendt igennem obj
     var getlocalstorage = localStorage.getItem("opgave"); //Her er opgave filnavnet i localstorage
     var mylocal = [];
     if (getlocalstorage !== null){
@@ -88,7 +88,6 @@ function visopgaver(obj) {
 /*
   Her laver vi funktionen til publisher knappen.
 */
-
 window.onload = function()
 {
   visopgaver();
@@ -98,10 +97,18 @@ window.onload = function()
   });
 }
 
-//Funktion der kan sortere mellem ens opslag
-function søgopgave() {
+//Funktion der kan redigere ens profiloplysninger
+//function redigeroplysninger {
+//}
 
-}
+//Funktion der kan fjerne en opgave
+//function fjernopgave() {
+//}
+
+//Funktion der kan sortere mellem ens opslag
+//function søgopgave() {
+//}
+
 
 //Alertbox til registrering af newsletters
 function validation() {
