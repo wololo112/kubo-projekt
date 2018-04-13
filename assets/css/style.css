@@ -3,12 +3,27 @@ body {
 }
 
 /*Dette er her at selve at elementerne er i*/
-#wrapper {
+.wrapper {
   margin: 0px auto;
   padding-left: 10px;
   padding-right: 10px;
   max-width: 960px;
 }
+
+/* flex standarter */
+
+.flex {
+  display: flex;
+}
+
+.flex.column {
+  flex-direction: column;
+}
+
+.flex.row {
+  flex-direction: row;
+}
+
 
 
 /*Dette er selve navigationsbaren*/
@@ -110,20 +125,21 @@ body {
 }
 
 #flex-section3 {
-  display: flex;
-  flex-direction: row;
   margin: auto;
 }
 
 #flex-section3 h2 {
   margin-top: 10vh;
-  margin-left: 60vh;
   text-align: center;
 }
 
-#flex-section3 ul {
-  margin-top: 20vh;
-  margin-left: -30vh;
+.buttons button {
+  width: 100px;
+  height: 50px;
+  background: #fff;
+  color: black;
+  margin: auto;
+  display: block;
 }
 
 
