@@ -373,8 +373,14 @@ body {
   height: 500px;
 }
 
+#flex-section9 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /*Dette er i selve matematikopslags.html dokumentet, når man laver en kommentar*/
 #flex-section10 {
+  background-color: gray;
   display: flex;
   flex-direction: row;
   margin: auto;
