@@ -94,8 +94,8 @@ body {
 
 /*Dette er logoet ved navigationsbaren*/
 #logo {
-  width: 90%;
-  height: 80%;
+  width: 100%;
+  height: 60%;
   padding-top: 5px;
 }
 .navbar {
@@ -134,19 +134,19 @@ body {
 }
 
 #blog {
-  width: 10%;
+  width: 20%;
 
 }
 #besked {
-  width: 10%;
+  width: 20%;
 }
 
 #notifikation {
-  width: 10%;
+  width: 20%;
 }
 
 #tagtile {
-  width: 10%;
+  width: 20%;
 }
 /*Dette er alle de ting som sker under forsiden*/
 
