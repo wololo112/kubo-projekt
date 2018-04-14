@@ -138,6 +138,11 @@ body {
 
 }
 
+input {
+  font-family: lato;
+  font-size: 12px;
+}
+
 #blog {
   width: 20%;
 
