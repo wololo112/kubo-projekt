@@ -52,7 +52,7 @@ function visopgaver(obj) {
     var getlocalstorage = localStorage.getItem("opgave");
     var obj = JSON.parse(getlocalstorage); //Henter local storage hvis objektet ikke eksiterer og overskriver den
   }
-  if(typeof obj !== "undefined") { //typeof viser hvilken type af objekt det er, og hvis det ikke findes vil den altid være undefined da det ikke er klacificeret som noget. Sådan sikrer vi os at vores objekt alt er noget og ikek ingenting.
+  if(typeof obj !== "undefined") { /*typeof viser hvilken type af objekt det er, og hvis det ikke findes vil den altid være undefined da det ikke er klacificeret som noget. Sådan sikrer vi os at vores objekt alt er noget og ikek ingenting.*/
     obj.forEach(function(arg,ii){
       if (arg.opgavetitel && arg.emneord && arg.lektionslængde && arg.beskrivelse && arg.klassetrin) {
         var itemBox = document.createElement("div"); // Man opretter div
