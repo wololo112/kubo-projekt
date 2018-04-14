@@ -179,6 +179,15 @@ input {
     content: center, center;
 }
 
+#headersprog {
+  height: 50vh;
+  background-color: #f1f1f2;
+  background-image: url("../img/imgtre.jpg");
+  background-size: cover;
+  height: 400px;
+  content: center, center;
+}
+
 #flex-section {
   display: flex;
   flex-direction: row;
