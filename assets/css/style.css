@@ -43,7 +43,7 @@ body {
 }
 
 #header a:hover {
-  background-color: red;
+  background-color: white;
   color: black;
 }
 
@@ -326,6 +326,7 @@ body {
 #matematikdebat {
   height: 30vh;
   background-color: white;
+  text-align: center;
 }
 
 .sprogdebat {
