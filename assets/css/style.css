@@ -299,6 +299,7 @@ input {
 
 #flex-section6 {
   display: flex;
+  justify-content: space-around;
   flex-direction: row;
   margin: auto;
 
