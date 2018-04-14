@@ -100,6 +100,10 @@ body {
   max-height: 80%;
 }
 
+.navflexto {
+text-align: center;
+}
+
 #blog {
   max-width: 8%
 
@@ -109,6 +113,10 @@ body {
 }
 
 #notifikation {
+  max-width: 8%
+}
+
+#tagtile {
   max-width: 8%
 }
 /*Dette er alle de ting som sker under forsiden*/
