@@ -29,7 +29,7 @@ body {
 /*Dette er selve navigationsbaren*/
 
 #header {
-  background-color: gray;
+  background-color: #f1f1f2;
   overflow: hidden;
 }
 
@@ -94,15 +94,13 @@ body {
 
 /*Dette er logoet ved navigationsbaren*/
 #logo {
-  max-width: 80%;
-  max-height: 80%;
-  padding-top: 15px;
+  width: 90%;
+  height: 80%;
+  padding-top: 5px;
 }
 .navbar {
   display: flex;
   justify-content: space-around;
-  flex-flow: row wrap;
- align-items: stretch;
 }
 
 .navflexet {
@@ -136,19 +134,19 @@ body {
 }
 
 #blog {
-  max-width: 10%
+  width: 10%;
 
 }
 #besked {
-  max-width: 10%
+  width: 10%;
 }
 
 #notifikation {
-  max-width: 10%
+  width: 10%;
 }
 
 #tagtile {
-  max-width: 10%
+  width: 10%;
 }
 /*Dette er alle de ting som sker under forsiden*/
 
