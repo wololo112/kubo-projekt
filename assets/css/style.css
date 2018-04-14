@@ -239,6 +239,7 @@ body {
     background: #00a19b;
     color: white;
     border-radius: 16px;
+    font-family: lato;
 }
 
 #video {
@@ -435,6 +436,7 @@ body {
   margin-top: -5vh;
   font-size: 10px;
   color: #044c7f;
+  font-family: lato;
 }
 
 /* Nyhedsbrevet i footeren */
@@ -443,6 +445,7 @@ body {
   margin-top: 1vh;
   margin-left: -3vh
   color: #044c7f;
+  font-family: lato;
 }
 
 #nyhedsbrevet {
@@ -504,6 +507,9 @@ body {
 #kubo {
   color: #044c7f;
   font-size: 12px;
+}
+#kuboinformation {
+  font-family: lato;
 }
 
 /*Styling af div. tagget debatvisning, som viser ens blog*/
