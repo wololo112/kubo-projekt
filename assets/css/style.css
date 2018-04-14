@@ -1,5 +1,6 @@
 /*Det er her det generelle der bliver vist (som ikke er en del af ens wrapper)*/
 body {
+  margin: auto;
 }
 
 /*Dette er her at selve at elementerne er i*/
