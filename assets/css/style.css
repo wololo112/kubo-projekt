@@ -282,6 +282,13 @@ body {
   float: right;
 }
 
+#detteharandreikke {
+  background: #00a19b;
+}
+#detteharandreikke a {
+  color: white;
+}
+
 /*Det er inde for matematikdebat*/
 
 #flex-section6 {
