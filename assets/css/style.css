@@ -391,6 +391,7 @@ input {
   background-color: #F6F7F9;
   display: flex;
   flex-wrap: wrap;
+  margin: 70px 40px;
 }
 
 ul {
@@ -398,7 +399,10 @@ ul {
   flex: 1;
   font-family: 'lato', sans-serif;
   font-size: 12px;
+  line-height: 18px;
   list-style-type: none;
+  margin: 40px 960px 40px 40px;
+  padding: 0 10px;
 }
 
 /*Dette er i selve matematikopslags.html dokumentet, når man laver en kommentar*/
