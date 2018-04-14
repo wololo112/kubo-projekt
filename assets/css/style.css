@@ -100,7 +100,17 @@ body {
   max-height: 80%;
 }
 
+#blog {
+  max-width: 8%
 
+}
+#besked {
+  max-width: 8%
+}
+
+#notifikation {
+  max-width: 8%
+}
 /*Dette er alle de ting som sker under forsiden*/
 
 #loaded {
