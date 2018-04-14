@@ -191,7 +191,14 @@ text-align: center;
   color: white;
   margin: auto;
   display: block;
-  text-decoration-color: white;
+  text-decoration: none;
+}
+.buttons button a {
+  color: white;
+  text-decoration: none;
+  font-family: lato;
+  font-size: 15px;
+
 }
 
 #tilmeld {
