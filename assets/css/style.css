@@ -163,7 +163,7 @@ input {
 
 #loaded {
     height: 50vh;
-    background-color: yellow;
+    background-color: #f1f1f2;
     background-image: url("../img/imgone.jpg");
     background-size: cover;
     height: 400px;
@@ -172,7 +172,7 @@ input {
 
 #headermatematik {
     height: 50vh;
-    background-color: yellow;
+    background-color: #f1f1f2;
     background-image: url("../img/imgtwo.jpg");
     background-size: cover;
     height: 400px;
@@ -289,12 +289,42 @@ input {
   float: right;
 }
 
-#detteharandreikke {
-  background: #00a19b;
-}
 #detteharandreikke a {
   color: white;
 }
+#opgavetitel {
+  width: 300px;
+  margin: 5px;
+}
+#emneord {
+  width: 300px;
+  margin: 5px;
+}
+#lektionslængde {
+  width: 300px;
+  margin: 5px;
+
+}
+#beskrivelse {
+  height: 100px;
+  width: 300px;
+  margin: 5px;
+
+}
+#klassetrin {
+
+}
+
+#uploadfile {
+
+}
+#detteharandreikke {
+  background: #00a19b;
+  width: 100px;
+  border-radius: 16px;
+
+}
+
 
 /*Det er inde for matematikdebat*/
 
@@ -343,8 +373,8 @@ input {
 /*Dette er oprette en ny debat og søge efter debatter for alle fag*/
 
 .nydebat {
-  height: 30vh;
-  width: 400px;
+  height: 33vh;
+  width: 480px;
   float: right;
   margin-right: 150px;
   background-color: white;
