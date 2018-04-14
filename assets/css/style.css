@@ -388,8 +388,15 @@ input {
 }
 
 #flex-section9 {
+  background-color: #F6F7F9;
   display: flex;
   flex-wrap: wrap;
+}
+
+ul {
+  list-style-type: none;
+  flex: 1;
+  background-color: white;
 }
 
 /*Dette er i selve matematikopslags.html dokumentet, når man laver en kommentar*/
