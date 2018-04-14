@@ -80,6 +80,10 @@ body {
   color: #044c7f;
 }
 
+#trappeet h2 {
+  margin-top: 0px;
+}
+
 #trappeto {
   margin-left: 400px;
   color: #044c7f;
@@ -324,7 +328,7 @@ body {
 /*De findes for selve filerne for matematik, andresfag & sprog*/
 
 #matematikdebat {
-  height: 30vh;
+
   background-color: white;
   text-align: center;
   color: #044c7f;
@@ -339,6 +343,26 @@ body {
 .andrefagdebat {
   height: 40vh;
   background-color: #b49dc8;
+}
+.overskriftkubo {
+  text-align: center;
+  color: #044c7f;
+  background-color: #f1f1f2;
+  height: 70px;
+}
+
+.overskriftkubo h2 {
+  padding-top: 20px;
+}
+
+.flerematematik {
+  text-align: center;
+  color: #044c7f;
+}
+
+
+.materialekubo {
+  height: 500px;
 }
 
 /*Dette er i selve matematikopslags.html dokumentet, når man laver en kommentar*/
