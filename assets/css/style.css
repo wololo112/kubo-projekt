@@ -98,7 +98,7 @@ body {
 
 /*Dette er logoet ved navigationsbaren*/
 #logo {
-  width: 100%;
+  width: 120%;
   height: 60%;
   padding-top: 5px;
 }
@@ -297,6 +297,12 @@ body {
 
 }
 
+.bokset {
+  height: 250px;
+  width: 130px;
+  background-color: #f1f1f2;
+}
+
 /*Det er inde for andrefagdebat*/
 
 #flex-section7 {
@@ -362,6 +368,7 @@ body {
 
 
 .materialekubo {
+  justify-content: space-around;
   height: 500px;
 }
 
