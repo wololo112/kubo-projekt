@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KEDU Matematik opslag</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <script src="assets/javascript/script.js"></script>
   </head>
   <body>
@@ -41,7 +43,7 @@
             <li><p>Klassetrin:<p></li>
             <li><p>Emneord:<p></li>
           </ul>
-          
+
         </div>
     </div>
     <div id="kommentarvisning">
@@ -72,24 +74,26 @@
     </div>
     </main>
   </body>
-    <footer class="footer">
-     <div id="kubo">
-      <a href="https://kubo-robot.com/" target="_blank" id="kuboinformation">Læs om KUBO her</a>
+  <footer class="footer">
+   <div id="kubo">
+    <a href="https://kubo-robot.com/" target="_blank" id="kuboinformation">Læs om KUBO her</a>
+  </div>
+    <form id="nyhedsbrevet">
+      <p>Tilmeld dig nyhedsbrevet her, og følg med: </p>
+    <input type="email" id="nyhedsbrev" class="nyhedsbrev" placeholder="Indtast e-mail"/>
+    <input type="button" id="tilmeld" class="tilmeld" value="Tilmeld" onclick="return validation()">
+  </form>
+  <div id="faq">
+    <a href="faq.html" >FAQ</a>
+  </div>
+  <div id="kedufooter">
+    <a href="kedulandingpage.html"><img src="assets/img/KEDU-LOGO.png" alt="kagemad width="50" height="25""></a>
+  </div>
+  <div id="fa">
+      <a class="fa fa-facebook" target="_blank" href="https://www.facebook.com/KUBORobot/"></a>
+      <a class="fa fa-linkedin" target="_blank" href="https://linkedin.com/company/kubo-robot"></a>
+      <a class="fa fa-twitter" target="_blank" href="https://twitter.com/kubo_robot"></a>
+      <a class="fa fa-instagram" target="_blank" href="https://www.instagram.com/kubo_robotics/"></a>
     </div>
-      <form id="nyhedsbrevet">
-        <p>Tilmeld dig nyhedsbrevet her, og følg med: </p>
-      <input type="email" id="nyhedsbrev" class="nyhedsbrev" placeholder="Indtast e-mail"/>
-      <input type="button" id="tilmeld" class="tilmeld" value="Tilmeld" onclick="return validation()">
-    </form>
-    <div id="faq">
-      <a href="faq.html" >FAQ</a>
-    </div>
-    <div id="kedufooter">
-      <a href="kedulandingpage.html"><img src="assets/img/KEDU-LOGO.png" alt="kagemad width="50" height="25""></a>
-    </div>
-        <a class="fa fa-facebook" target="_blank" href="https://www.facebook.com/KUBORobot/"></a>
-        <a class="fa fa-linkedin" target="_blank" href="https://linkedin.com/company/kubo-robot"></a>
-        <a class="fa fa-twitter" target="_blank" href="https://twitter.com/kubo_robot"></a>
-        <a class="fa fa-instagram" target="_blank" href="https://www.instagram.com/kubo_robotics/"></a>
-    </footer>
+  </footer>
 </html>
