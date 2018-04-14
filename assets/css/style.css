@@ -289,26 +289,30 @@ input {
   float: right;
 }
 
-#detteharandreikke a {
-  color: white;
-}
 #opgavetitel {
   width: 300px;
   margin: 5px;
+  text-align: left;
 }
 #emneord {
   width: 300px;
   margin: 5px;
+  text-align: left;
+
 }
 #lektionslængde {
   width: 300px;
   margin: 5px;
+  text-align: left;
+
 
 }
 #beskrivelse {
   height: 100px;
   width: 300px;
   margin: 5px;
+  text-align: left;
+
 
 }
 #klassetrin {
