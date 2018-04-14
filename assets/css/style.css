@@ -94,46 +94,61 @@ body {
 
 /*Dette er logoet ved navigationsbaren*/
 #logo {
-  max-width: 10%;
-  max-height: 10%;
+  max-width: 80%;
+  max-height: 80%;
   padding-top: 15px;
 }
 .navbar {
   display: flex;
   justify-content: space-around;
-  flex-direction: row;
+  flex-flow: row wrap;
+ align-items: stretch;
 }
 
 .navflexet {
+  display: flex;
 
+  flex-grow: 1;
+}
+
+.navflexto {
+  display: flex;
+  max-width: 30%;
+  max-height: 20%;
+  flex-grow: 1;
 }
 
 .navflexto button a {
   text-align: center;
-
 }
 
 .navflextre {
+  display: flex;
+  flex-grow: 2;
 
 }
 
 .navflexfire {
+  display: flex;
+  justify-content:space-between;
+  flex-grow: 1;
+
 }
 
 #blog {
-  max-width: 2.2%
+  max-width: 10%
 
 }
 #besked {
-  max-width: 2%
+  max-width: 10%
 }
 
 #notifikation {
-  max-width: 2%
+  max-width: 10%
 }
 
 #tagtile {
-  max-width: 4%
+  max-width: 10%
 }
 /*Dette er alle de ting som sker under forsiden*/
 
