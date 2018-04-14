@@ -141,6 +141,7 @@ body {
 input {
   font-family: 'lato', sans-serif;
   font-size: 12px;
+  text-align: center;
 }
 
 #blog {
@@ -300,9 +301,12 @@ input {
 #flex-section6 {
   display: flex;
   justify-content: space-around;
-  flex-direction: row;
   margin: auto;
 
+}
+
+#klassetrin {
+  font-family: lato;
 }
 
 #flex-section6 h2 {
