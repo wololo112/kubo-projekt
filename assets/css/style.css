@@ -298,8 +298,9 @@ body {
 }
 
 .bokset {
-  height: 250px;
-  width: 130px;
+  height: 280px;
+  width: 210px;
+  margin-top: 30px;
   background-color: #f1f1f2;
 }
 
