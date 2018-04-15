@@ -770,10 +770,14 @@ background-color: #f1f1f2;
     color: white;
     background-color: #00a19b;
     margin-top: 5%;
+    width: 120px;
+    margin-left: 100px;
 }
 #cancelknap {
     font-family: lato, sans-serif;
     color: #044C7F;
     background-color: #f1f1f2;
     margin-top: 5%;
+    width: 120px;
+    margin-left: 100px;
 }
