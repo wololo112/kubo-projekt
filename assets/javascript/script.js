@@ -124,3 +124,15 @@ function validation() {
     return true;
   }
 }
+//Log in info//
+function check(form)
+{
+ if(form.userid.value == "Mike" && form.pswrd.value == "momo")
+  {
+    window.open('kedulandingpage.html')
+  }
+ else
+ {
+   alert("Error Password or Username")
+  }
+}
