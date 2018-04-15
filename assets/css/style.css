@@ -209,6 +209,7 @@ input {
   width: 100%;
   text-align: center;
   padding-top: 250px;
+  font-family: lato;
 }
 
 #forumtekst {
@@ -226,6 +227,7 @@ input {
   width: 100%;
   text-align: center;
   color: #044c7f;
+  font-family: lato;
 }
 
 #calltoaction {
@@ -242,6 +244,7 @@ input {
   margin-top: 10vh;
   text-align: center;
   padding-top: 9px;
+  font-family: lato;
 }
 
 .buttons button {
@@ -287,6 +290,7 @@ input {
   color: #044c7f;
   text-align: center;
   width: 100%;
+  font-family: lato;
 }
 
 #video-section {
@@ -398,10 +402,11 @@ input {
 }
 
 .semere {
-  margin-top: 60px;
+  margin-top: 48px;
 }
 
 .semere button {
+  width: 130px;
   margin-top: 90px;
   padding-top: auto;
   background: #00a19b;
