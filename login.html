@@ -29,59 +29,28 @@
   <script src="assets/javascript/script.js"></script>
 </head>
 <body>
-    <header id="header">
-      <div class="navbar">
-        <div class="navflexet">
-          <a href="kedulandingpage.html"><img src="assets/img/KEDU-LOGO.png" id="logo" alt="logo"></a>
-        </div>
-        <div class="navflexto buttons flex row">
-            <button type="button" name="button"><a href="matematik.html">Matematik</a></button>
-            <button type="button" name="button"><a href="sprog.html">Sprog</a></button>
-            <button type="button" name="button"><a href="andrefag.html">Andre fag</a></button>
-        </div>
-        <div class="navflextre">
-          <input type="text" placeholder="Skriv søgeord" />
-        </div>
-        <div class="navflexfire">
-          <a href="gemteposts.html"><img src="assets/img/gemteblogs.png" id="blog" alt="posts"></a>
-          <a href="indbakke.html"><img src="assets/img/beskeder.png" id="besked" alt="beskeder"></a>
-          <a href="notifikationer.html"><img src="assets/img/notifikation.png" id="notifikation" alt="notifikationer"></a>
-          <a href="profil.html"><img src="assets/img/tagtile.png" id="tagtile" alt="Din profil"></a>
-        </div>
 
-      </div>
-
-    </header>
-    <div id="loaded">
-      <div id="flex-section">
-        <h2>Sammen skaber vi det bedste grundlag for at lære børn at forstå teknologien</h2>
-      </div>
-    </div>
-    <div id="forumtekst">
-      <div id="flex-section2">
-        <h4>KEDU er et forum til udveksling af tanker og idéer, mellem brugere <br>af KUBO Robotics.</br></h4>
-      </div>
-    </div>
-    <div id="calltoaction">
-      <div id="flex-section3">
-        <h3>Kom godt igang med: </h3>
-        <div class="buttons flex row">
-          <button type="button" name="button"><a href="matematik.html">Matematik</a></button>
-          <button type="button" name="button"><a href="sprog.html">Sprog</a></button>
-          <button type="button" name="button"><a href="andrefag.html">Andre fag</a></button>
+    <form name="login">
+        <div id="login">
+            Username<input type="text" name="userid"/>
+            Password<input type="password" name="pswrd"/>
+            <input type="button" id="loginknap" onclick="check(this.form)" value="Login"/>
+            <input type="reset" id="cancelknap" value="Cancel"/>
         </div>
-      </div>
-    </div>
-        <div style="background-image:url('assets/img/baggrund.png')">
-      <div id="flex-section4">
-        <h3>Sådan virker KEDU:</h3><br/>
-    </div>
-    <div id="video-section">
-    <iframe id="video" width="500" height="315" align="center"
-    src="https://www.youtube.com/embed/2FHxeDQzCqA">
-    </iframe>
-  </div>
-  </div>
+    </form>
+    <script language="javascript">
+    function check(form)
+    {
+     if(form.userid.value == "Mike" && form.pswrd.value == "momo")
+      {
+        window.open('kedulandingpage.html')
+      }
+     else
+     {
+       alert("Error Password or Username")
+      }
+    }
+    </script>
     <footer class="footer">
       <div id="kubo">
         <a href="https://kubo-robot.com/" target="_blank" id="kuboinformation">Læs om KUBO her</a>
@@ -104,7 +73,4 @@
         <a class="fa fa-instagram" target="_blank" href="https://www.instagram.com/kubo_robotics/"></a>
       </div>
     </footer>
-    </div>
-</body>
-
 </html>

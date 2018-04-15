@@ -105,9 +105,9 @@ body {
 
 /*Dette er logoet ved navigationsbaren*/
 #logo {
-  width: 130%;
-  height: 60%;
-  padding-top: 5px;
+  width: 140%;
+  height: 48%;
+  padding-top: 15px;
 }
 .navbar {
   display: flex;
@@ -134,12 +134,13 @@ body {
 .navflextre {
   display: flex;
   flex-grow: 2;
+  max-height: 40px;
+  margin-top: 22px;
 
 }
 
 .navflexfire {
   display: flex;
-  justify-content:space-between;
   flex-grow: 1;
 
 }
@@ -153,19 +154,25 @@ input {
 }
 
 #blog {
-  width: 20%;
+  margin-top: 10px;
+  width: 30%;
 
 }
 #besked {
-  width: 20%;
+  margin-top: 13px;
+
+  width: 30%;
 }
 
 #notifikation {
+  margin-top: 13px;
+
   width: 20%;
 }
 
 #tagtile {
-  width: 20%;
+  margin-top: 8px;
+  width: 23%;
 }
 /*Dette er alle de ting som sker under forsiden*/
 
@@ -390,7 +397,7 @@ input {
 .bokset {
   height: 280px;
   width: 210px;
-  margin-top: 30px;
+  margin-top: 25px;
   background-color: #f1f1f2;
 }
 .bokset h4,
@@ -403,12 +410,29 @@ input {
 
 }
 .bokset h4 {
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
-.semere {
-  margin-top: 48px;
+.bokset a {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 100%;
+  max-height: 10%;
 }
+#gemindlæg {
+  max-width: 12%;
+  max-height:12%;
+}
+.semere {
+  margin-top: 40px;
+}
+
+.semere a{
+  display: flex;
+  justify-content: center;
+
+}
+
 
 .semere button {
   width: 130px;
@@ -523,14 +547,23 @@ ul {
   padding: 10px 100px 10px 10px;
 }
 
-h1 {
+.tekstmat h1 {
   color: #226494;
   font-family: 'lato', sans-serif;
   font-size: 35px;
   flex: 3;
-  margin: 30px;
+  margin-top: 30px;
   position: relative;
   left: 100px;
+}
+.tekstmat h3 {
+  color: #226494;
+  font-family: 'lato', sans-serif;
+  font-size: 15px;
+  flex: 3;
+  margin-top: -20px;
+  position: relative;
+  left: 200px;
 }
 
 #save {
@@ -560,7 +593,9 @@ h1 {
   background-color: #b49dc8;
 }
 
-
+.gemteopgaver {
+margin: 100px;
+}
 
 /*Dette er footer, FAQ og social links*/
 
@@ -706,4 +741,28 @@ background-color: #f1f1f2;
 
 #debatvisning div button {
 
+}
+
+#login {
+    font-family: lato, sans-serif;
+    color: #044C7F;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 300px;
+    margin-top: 5%;
+    text-decoration: none;
+}
+
+#loginknap {
+    font-family: lato, sans-serif;
+    color: white;
+    background-color: #00a19b;
+    margin-top: 5%;
+}
+#cancelknap {
+    font-family: lato, sans-serif;
+    color: #044C7F;
+    background-color: #f1f1f2;
+    margin-top: 5%;
 }
