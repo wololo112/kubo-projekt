@@ -61,21 +61,25 @@ function visopgaver(obj) {
         itemBoxTitle.innerHTML = arg.opgavetitel;
         itemBox .appendChild(itemBoxTitle);
 
-        var itemBoxSub = document.createElement("span"); //opretter span
-        itemBoxSub.innerHTML = arg.emneord;
-        itemBox.appendChild(itemBoxSub);
-
-        var itemBoxClass= document.createElement("span"); //opretter span
-        itemBoxClass.innerHTML = arg.lektionslængde;
-        itemBox.appendChild(itemBoxClass);
-
-        var itemBoxTime= document.createElement("span"); //opretter span
-        itemBoxTime.innerHTML = arg.klassetrin;
-        itemBox.appendChild(itemBoxTime);
-
         var itemBoxDesc = document.createElement("p"); //opretter paragraf
         itemBoxDesc .innerHTML = arg.beskrivelse;
         itemBox.appendChild(itemBoxDesc);
+
+        var itemBoxSub = document.createElement("span"); //opretter span
+        itemBoxSub.innerHTML = "Emneord: " + arg.emneord;
+        itemBox.appendChild(itemBoxSub);
+
+        var itemBoxClass= document.createElement("span"); //opretter span
+        itemBoxClass.innerHTML = "Lektionslængde: " + arg.lektionslængde;
+        itemBox.appendChild(itemBoxClass);
+
+        var itemBoxTime= document.createElement("span"); //opretter span
+        itemBoxTime.innerHTML = "Klassetrin: " + arg.klassetrin;
+        itemBox.appendChild(itemBoxTime);
+
+        var itemButtonReadMore = document.createElement("button");
+        itemButtonReadMore.innerHTML = "Læs mere";
+        itemBox.appendChild(itemButtonReadMore);
 
         getdivlocation.appendChild(itemBox); //Her viser vi det visuelt
       } else {

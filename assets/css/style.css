@@ -554,7 +554,7 @@ ul {
     justify-content: flex-end;
 }
 
-.fa-facebook {
+.fa-facebok {
   background: #f1f1f2;
   color: black;
   flex-direction: row-reverse;
@@ -588,4 +588,37 @@ ul {
 
 /*Styling af div. tagget debatvisning, som viser ens blog*/
 #debatvisning {
+  justify-content: space-around;
+  min-height: 662px;
+}
+
+#debatvisning div {
+height: 280px;
+width: 310px;
+margin-top: 30px;
+background-color: #f1f1f2;
+}
+
+#debatvisning div h2 {
+  font-size: 20px;
+  color: blue;
+  text-align: center;
+}
+
+
+#debatvisning div p {
+  font-size: 18px;
+  color: yellow;
+  text-align: center;
+}
+
+/*Den skal sættes til at være over hinanden, i stedet for ved siden af hinanden*/
+#debatvisning div span {
+  font-size: 18px;
+  color: purple;
+  margin-left: 10px;
+}
+
+#debatvisning div button {
+  
 }
