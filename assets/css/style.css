@@ -140,9 +140,11 @@ body {
 }
 
 input {
-  font-family: 'lato', sans-serif;
+  font-family: 'lato',;
   font-size: 12px;
   text-align: center;
+  border-radius: 16px;
+
 }
 
 #blog {
