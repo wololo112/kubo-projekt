@@ -416,13 +416,16 @@ input {
   max-width: 12%;
   max-height:12%;
 }
+.semere {
+  margin-top: 40px;
+}
 
 .semere a{
-  margin-top: 4px;
   display: flex;
   justify-content: center;
 
 }
+
 
 .semere button {
   width: 130px;
