@@ -30,29 +30,47 @@
 </head>
 <body>
 
-
-  <footer class="footer">
-    <div id="kubo">
-      <a href="https://kubo-robot.com/" target="_blank" id="kuboinformation">Læs om KUBO her</a>
-    </div>
-    <form id="nyhedsbrevet">
-      <p>Tilmeld dig nyhedsbrevet her, og følg med: </p>
-    <input type="email" id="nyhedsbrev" class="nyhedsbrev" placeholder="Indtast e-mail"/>
-    <input type="button" id="tilmeld" class="tilmeld" value="Tilmeld" onclick="return validation()">
-  </form>
-    <div id="faq">
-      <a href="faq.html">FAQ</a>
-    </div>
-    <div id="kedufooter">
-      <a href="kedulandingpage.html"><img src="assets/img/KEDU-LOGO.png" id="kedufooterlogo" alt="kagemad"></a>
-    </div>
-    <div id="fa">
-      <a class="fa fa-facebook" target="_blank" href="https://www.facebook.com/KUBORobot/"></a>
-      <a class="fa fa-linkedin" target="_blank" href="https://linkedin.com/company/kubo-robot"></a>
-      <a class="fa fa-twitter" target="_blank" href="https://twitter.com/kubo_robot"></a>
-      <a class="fa fa-instagram" target="_blank" href="https://www.instagram.com/kubo_robotics/"></a>
-    </div>
-  </footer>
-</body>
-
+    <form name="login">
+        <div id="login">
+            Username<input type="text" name="userid"/>
+            Password<input type="password" name="pswrd"/>
+            <input type="button" onclick="check(this.form)" value="Login"/>
+            <input type="reset" value="Cancel"/>
+        </div>
+    </form>
+    <script language="javascript">
+    function check(form)
+    {
+     if(form.userid.value == "Mike" && form.pswrd.value == "momo")
+      {
+        window.open('kedulandingpage.html')
+      }
+     else
+     {
+       alert("Error Password or Username")
+      }
+    }
+    </script>
+    <footer class="footer">
+      <div id="kubo">
+        <a href="https://kubo-robot.com/" target="_blank" id="kuboinformation">Læs om KUBO her</a>
+      </div>
+      <form id="nyhedsbrevet">
+        <p>Tilmeld dig nyhedsbrevet her, og følg med: </p>
+      <input type="email" id="nyhedsbrev" class="nyhedsbrev" placeholder="Indtast e-mail"/>
+      <input type="button" id="tilmeld" class="tilmeld" value="Tilmeld" onclick="return validation()">
+    </form>
+      <div id="faq">
+        <a href="faq.html">FAQ</a>
+      </div>
+      <div id="kedufooter">
+        <a href="kedulandingpage.html"><img src="assets/img/KEDU-LOGO.png" id="kedufooterlogo" alt="kagemad"></a>
+      </div>
+      <div id="fa">
+        <a class="fa fa-facebook" target="_blank" href="https://www.facebook.com/KUBORobot/"></a>
+        <a class="fa fa-linkedin" target="_blank" href="https://linkedin.com/company/kubo-robot"></a>
+        <a class="fa fa-twitter" target="_blank" href="https://twitter.com/kubo_robot"></a>
+        <a class="fa fa-instagram" target="_blank" href="https://www.instagram.com/kubo_robotics/"></a>
+      </div>
+    </footer>
 </html>
