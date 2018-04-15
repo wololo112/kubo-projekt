@@ -129,10 +129,11 @@ function check(form)
 {
  if(form.userid.value == "Mike" && form.pswrd.value == "momo")
   {
-    window.open('kedulandingpage.html')
+    window.open('kedulandingpage.html') && window.close('login.html')
   }
+
  else
  {
-   alert("Error Password or Username")
+   alert("Username og/eller Password er ugyldigt. Prøv igen.")
   }
 }
