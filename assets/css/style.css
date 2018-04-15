@@ -84,16 +84,21 @@ body {
 #trappeet h2 {
   margin-top: 0px;
   padding-top: 20px;
+  font-family: lato;
 }
 
-#trappeto {
+#trappeto h2 {
   margin-left: 400px;
   color: #044c7f;
+  font-family: lato;
+
 }
 
-#trappetre {
+#trappetre h2 {
   margin-left: 530px;
   color: #044c7f;
+  font-family: lato;
+
 }
 
 /*Dette er selve dropdown menuen til profilen i vores navigationsmenu */
@@ -140,9 +145,11 @@ body {
 }
 
 input {
-  font-family: 'lato', sans-serif;
+  font-family: 'lato',;
   font-size: 12px;
   text-align: center;
+  border-radius: 16px;
+
 }
 
 #blog {
@@ -176,7 +183,7 @@ input {
     background-color: #f1f1f2;
     background-image: url("../img/imgtwo.jpg");
     background-size: cover;
-    height: 400px;
+    height: 420px;
     content: center, center;
 }
 
@@ -185,7 +192,7 @@ input {
   background-color: #f1f1f2;
   background-image: url("../img/imgtre.jpg");
   background-size: cover;
-  height: 400px;
+  height: 420px;
   content: center, center;
 }
 #headerandrefag {
@@ -193,7 +200,7 @@ input {
   background-color: #f1f1f2;
   background-image: url("../img/imgfire.jpg");
   background-size: cover;
-  height: 400px;
+  height: 420px;
   content: center, center;
 }
 
@@ -207,6 +214,7 @@ input {
   width: 100%;
   text-align: center;
   padding-top: 250px;
+  font-family: lato;
 }
 
 #forumtekst {
@@ -224,6 +232,7 @@ input {
   width: 100%;
   text-align: center;
   color: #044c7f;
+  font-family: lato;
 }
 
 #calltoaction {
@@ -240,6 +249,7 @@ input {
   margin-top: 10vh;
   text-align: center;
   padding-top: 9px;
+  font-family: lato;
 }
 
 .buttons button {
@@ -285,6 +295,7 @@ input {
   color: #044c7f;
   text-align: center;
   width: 100%;
+  font-family: lato;
 }
 
 #video-section {
@@ -351,6 +362,7 @@ input {
   background: #00a19b;
   width: 100px;
   border-radius: 16px;
+  color: white;
 
 }
 
@@ -390,6 +402,32 @@ input {
   color: #044c7f;
 
 }
+.bokset h4 {
+  margin-top: 20px;
+}
+
+.semere {
+  margin-top: 48px;
+}
+
+.semere button {
+  width: 130px;
+  margin-top: 90px;
+  padding-top: auto;
+  background: #00a19b;
+  border-radius: 16px;
+  color: white;
+  margin: auto;
+  display: block;
+  text-decoration: none;
+
+}
+.semere button a {
+  color: white;
+  text-decoration: none;
+  font-family: lato;
+  font-size: 13px;
+   }
 
 /*Det er inde for andrefagdebat*/
 
@@ -426,6 +464,8 @@ input {
   background-color: white;
   text-align: center;
   color: #044c7f;
+  font-family: lato;
+
 
 }
 
@@ -443,6 +483,8 @@ input {
   color: #044c7f;
   background-color: #f1f1f2;
   height: 70px;
+  font-family: lato;
+
 }
 
 .overskriftkubo h2 {
@@ -452,6 +494,8 @@ input {
 .flerematematik {
   text-align: center;
   color: #044c7f;
+  font-family: lato;
+
 }
 
 
@@ -631,7 +675,6 @@ h1 {
 /*Styling af div. tagget debatvisning, som viser ens blog*/
 #debatvisning {
   justify-content: space-around;
-  min-height: 662px;
 }
 
 #debatvisning div {
