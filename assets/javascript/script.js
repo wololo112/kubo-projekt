@@ -134,6 +134,6 @@ function check(form)
 
  else
  {
-   alert("Username og/eller Password er ugyldigt. Prøv igen.")
+   alert("Brugernavn og/eller Password er ugyldigt. Prøv igen.")
   }
 }
