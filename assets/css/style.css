@@ -361,7 +361,7 @@ input {
 }
 
 #flex-section6 h2 {
-    width: 100%;
+  width: 100%;
   text-align: center;
   color: #044c7f;
 
@@ -440,13 +440,13 @@ input {
 
 .materialekubo {
   justify-content: space-around;
-  height: 662px;
 }
 
 #flex-section9 {
   background-color: #F6F7F9;
   display: flex;
   flex-wrap: wrap;
+  height: 662px;
   margin: 70px 40px;
 }
 
@@ -457,8 +457,14 @@ ul {
   font-size: 12px;
   line-height: 18px;
   list-style-type: none;
-  margin: 40px 960px 490px 40px;
-  padding: 0 10px;
+  margin: 40px 40px 490px 40px;
+  padding: 10px 100px 10px 10px;
+}
+
+h1 {
+  font-family: 'lato', sans-serif;
+  flex: 3;
+  margin: 32px;
 }
 
 /*Dette er i selve matematikopslags.html dokumentet, når man laver en kommentar*/
@@ -620,5 +626,5 @@ background-color: #f1f1f2;
 }
 
 #debatvisning div button {
-  
+
 }
