@@ -83,6 +83,7 @@ body {
 
 #trappeet h2 {
   margin-top: 0px;
+  padding-top: 20px;
 }
 
 #trappeto {
@@ -310,17 +311,22 @@ input {
   width: 300px;
   margin: 5px;
   text-align: left;
+  background-color: #f1f1f2;
+
 }
 #emneord {
   width: 300px;
   margin: 5px;
   text-align: left;
+  background-color: #f1f1f2;
+
 
 }
 #lektionslængde {
   width: 300px;
   margin: 5px;
   text-align: left;
+  background-color: #f1f1f2;
 
 
 }
@@ -329,6 +335,8 @@ input {
   width: 300px;
   margin: 5px;
   text-align: left;
+  background-color: #f1f1f2;
+
 
 
 }
@@ -372,6 +380,15 @@ input {
   width: 210px;
   margin-top: 30px;
   background-color: #f1f1f2;
+}
+.bokset h4,
+.bokset h6,
+.bokset p {
+  font-family: lato;
+  text-align: center;
+  margin: 10px;
+  color: #044c7f;
+
 }
 
 /*Det er inde for andrefagdebat*/
