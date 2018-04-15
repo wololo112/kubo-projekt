@@ -84,16 +84,21 @@ body {
 #trappeet h2 {
   margin-top: 0px;
   padding-top: 20px;
+  font-family: lato;
 }
 
-#trappeto {
+#trappeto h2 {
   margin-left: 400px;
   color: #044c7f;
+  font-family: lato;
+
 }
 
-#trappetre {
+#trappetre h2 {
   margin-left: 530px;
   color: #044c7f;
+  font-family: lato;
+
 }
 
 /*Dette er selve dropdown menuen til profilen i vores navigationsmenu */
@@ -459,6 +464,8 @@ input {
   background-color: white;
   text-align: center;
   color: #044c7f;
+  font-family: lato;
+
 
 }
 
@@ -476,6 +483,8 @@ input {
   color: #044c7f;
   background-color: #f1f1f2;
   height: 70px;
+  font-family: lato;
+
 }
 
 .overskriftkubo h2 {
@@ -485,6 +494,8 @@ input {
 .flerematematik {
   text-align: center;
   color: #044c7f;
+  font-family: lato;
+
 }
 
 
