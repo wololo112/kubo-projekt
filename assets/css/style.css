@@ -447,6 +447,7 @@ input {
   display: flex;
   flex-wrap: wrap;
   height: 662px;
+  justify-content: space-between;
   margin: 70px 40px;
 }
 
@@ -466,7 +467,23 @@ h1 {
   font-family: 'lato', sans-serif;
   font-size: 35px;
   flex: 3;
-  margin: 32px;
+  margin: 30px;
+  position: relative;
+  left: 100px;
+}
+
+#save {
+  flex: 3;
+  margin: 30px;
+  width: 40px;
+}
+
+#math {
+  flex: 3;
+  margin-top: 200px;
+  width: 300px;
+  position: relative;
+  left: 58px;
 }
 
 /*Dette er i selve matematikopslags.html dokumentet, når man laver en kommentar*/
