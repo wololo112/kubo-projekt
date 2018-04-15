@@ -183,7 +183,7 @@ input {
     background-color: #f1f1f2;
     background-image: url("../img/imgtwo.jpg");
     background-size: cover;
-    height: 400px;
+    height: 420px;
     content: center, center;
 }
 
@@ -192,7 +192,7 @@ input {
   background-color: #f1f1f2;
   background-image: url("../img/imgtre.jpg");
   background-size: cover;
-  height: 400px;
+  height: 420px;
   content: center, center;
 }
 #headerandrefag {
@@ -200,7 +200,7 @@ input {
   background-color: #f1f1f2;
   background-image: url("../img/imgfire.jpg");
   background-size: cover;
-  height: 400px;
+  height: 420px;
   content: center, center;
 }
 
@@ -675,7 +675,6 @@ h1 {
 /*Styling af div. tagget debatvisning, som viser ens blog*/
 #debatvisning {
   justify-content: space-around;
-  min-height: 662px;
 }
 
 #debatvisning div {
