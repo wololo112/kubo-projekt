@@ -537,7 +537,7 @@ ul {
   padding: 10px 100px 10px 10px;
 }
 
-h1 {
+.tekstmat h1 {
   color: #226494;
   font-family: 'lato', sans-serif;
   font-size: 35px;
@@ -546,7 +546,7 @@ h1 {
   position: relative;
   left: 100px;
 }
-h3 {
+.tekstmat h3 {
   color: #226494;
   font-family: 'lato', sans-serif;
   font-size: 15px;
