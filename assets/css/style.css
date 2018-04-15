@@ -353,6 +353,7 @@ input {
   background: #00a19b;
   width: 100px;
   border-radius: 16px;
+  color: white;
 
 }
 
@@ -392,6 +393,31 @@ input {
   color: #044c7f;
 
 }
+.bokset h4 {
+  margin-top: 20px;
+}
+
+.semere {
+  margin-top: 60px;
+}
+
+.semere button {
+  margin-top: 90px;
+  padding-top: auto;
+  background: #00a19b;
+  border-radius: 16px;
+  color: white;
+  margin: auto;
+  display: block;
+  text-decoration: none;
+
+}
+.semere button a {
+  color: white;
+  text-decoration: none;
+  font-family: lato;
+  font-size: 13px;
+   }
 
 /*Det er inde for andrefagdebat*/
 
