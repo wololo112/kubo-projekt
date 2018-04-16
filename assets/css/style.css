@@ -782,3 +782,8 @@ background-color: #f1f1f2;
     width: 120px;
     margin-left: 100px;
 }
+.errortekst {
+  text-align: center;
+  font-family: lato;
+  margin:200px;
+}
