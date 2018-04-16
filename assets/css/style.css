@@ -860,3 +860,11 @@ background-color: #f1f1f2;
   font-family: 'lato';
   margin:200px;
 }
+
+#opretdig {
+    text-align: center;
+    font-family: 'lato', sans-serif;
+    color: #044C7F;
+    padding-right: 148px;
+    font-size: 15px;
+}
