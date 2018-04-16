@@ -25,6 +25,7 @@
     <meta property="fb:admins" content="" />
     <title>KEDU Matematik - Foraet for lærere og andre brugere af KUBO Robotics i matematikundervisningen</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/accordian.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   </head>
@@ -49,7 +50,6 @@
               <a href="notifikationer.html"><img src="assets/img/notifikation.png" id="notifikation" alt="notifikationer"></a>
               <a href="profil.html"><img src="assets/img/tagtile.png" id="tagtile" alt="Din profil"></a>
             </div>
-
           </div>
 
     </header>
@@ -58,10 +58,11 @@
         <div id="flex-section9">
           <div>
             <ul>
-              <li><p>Lektionslængde:<p></li>
-              <li><p>Fagområde:<p></li>
-              <li><p>Klassetrin:<p></li>
-              <li><p>Emneord:<p></li>
+              <h2 id="spantitel"></h2>
+              <li><p>Lektionslængde: <span id="spanlektionslængde"></span><p></li>
+              <li><p>Klassetrin: <span id="spanklassetrin"></span><p></li>
+              <li><p>Emneord: <span id="spanemneord"></span><p></li>
+                <p id="spanbeskrivelse"></p>
             </ul>
           </div>
 
@@ -70,10 +71,18 @@
             <h3>- Af Test Person</h3>
           </div>
           <div><img src="assets/img/math.png" id="math" alt="matematik symboler"></div>
-          <div>  <a href="gemteposts.html"><img src="assets/img/gemteblogs.png" id="save" alt="gem opgave"></div>
+          <div><a href="gemteposts.html"><img src="assets/img/gemteblogs.png" id="save" alt="gem opgave"></a></div>
         </div>
     </div>
-    <div id="kommentarvisning">
+    <div class="wrapperaccordian">
+      <h1>Kommentar</h1>
+      <button class="accordian" type="button">Spørgsmål til opgaven</button>
+        <div class="panel" id="kommentarsporgsmal"></div>
+      <button class="accordian" type="button">Forslag til ændringer</button>
+        <div class="panel" id="kommentarandringer"></div>
+      <button class="accordian" type="button">Andet</button>
+        <div class="panel" id="kommentarandet"></div>
+    </div>
       <div id="matematikdebat">
         <div id="flex-section10">
           <h2>Matematik</h2>
@@ -98,9 +107,9 @@
             </form>
           </div>
         </div>
-    </div>
     </main>
-    <script src="assets/javascript/script.js"></script>
+    <script src="./assets/javascript/script.js"></script>
+    <script src="./assets/javascript/accordian.js"></script>
   </body>
   <footer class="footer">
    <div id="kubo">

@@ -21,6 +21,64 @@ function opretopgave() {
   }
 }
 
+function opretkommentar() {
+  var skrivkommentar = document.getElementById('skrivkommentar').value;
+  var kommentarområde = document.getElementById('kommentarområde').value;
+
+  if(skrivkommentar && kommentarområde && slåop) {
+    var opslagsid = window.location.hash.substr(1);
+    var gammelkommentar = JSON.parse(localStorage.getItem("kommentar_" + opslagsid));
+    var kommentar = {
+      kommentar : skrivkommentar,
+      område : kommentarområde
+    };
+    if (gammelkommentar != null){
+        gammelkommentar.push(kommentar);
+    } else {
+        var gammelkommentar = [];
+        gammelkommentar.push(kommentar);
+    }
+    localStorage.setItem("kommentar_" + opslagsid, JSON.stringify(gammelkommentar));
+  } else {
+    console.log("Der er noget fra kommentararray der mangler");
+  }
+}
+
+function viskommentar () {
+  var opslagsid = window.location.hash.substr(1);
+  var allekommentarer = JSON.parse(localStorage.getItem("kommentar_" + opslagsid));
+  if (allekommentarer != null) {
+
+    document.getElementById("kommentarsporgsmal").innerHTML = "";
+    document.getElementById("kommentarandringer").innerHTML = "";
+    document.getElementById("kommentarandet").innerHTML = "";
+
+    allekommentarer.forEach(function(kom,ki){
+      var kommentar = kom.kommentar || "";
+      var område = null;
+      if (kom.område == "opgaven") {
+        område = document.getElementById("kommentarsporgsmal");
+        var områdenavn = "kommentarsporgsmal";
+      } else if (kom.område == "ændringer"){
+        område = document.getElementById("kommentarandringer");
+        var områdenavn = "kommentarandringer";
+      } else if (kom.område == "andet"){
+        område = document.getElementById("kommentarandet");
+        var områdenavn = "kommentarandet";
+      } else {
+        console.log ("ingen område");
+      }
+      if (område != null) {
+        var nykommentar = document.createElement("p");
+        nykommentar.setAttribute("class", "content");
+        nykommentar.innerHTML = kommentar;
+        område.appendChild(nykommentar);
+      }
+    });
+  }
+}
+
+
 //Laver en global handler, der håndterer local host for at kunne oprette opslag
 function setglobalvalue(obj) {
   obj = obj || null; // Vi sætter objektet til at være et objekt eller null, da det er lettere at arbejde med i stedet for undefined.
@@ -38,7 +96,7 @@ function setglobalvalue(obj) {
 }
 
 //Vi ønsker at vise det visuelt på hjemmesiden
-function visopgaver(obj) {
+function visopgaver(obj=null) {
 
   /*
   2 nedenstående linjer, nulstiller det som er i divs,
@@ -77,7 +135,8 @@ function visopgaver(obj) {
         itemBoxTime.innerHTML = "Klassetrin: " + arg.klassetrin;
         itemBox.appendChild(itemBoxTime);
 
-        var itemButtonReadMore = document.createElement("button");
+        var itemButtonReadMore = document.createElement("a");
+        itemButtonReadMore.setAttribute("href", "./matematikopslag.html#" + ii);
         itemButtonReadMore.innerHTML = "Læs mere";
         itemBox.appendChild(itemButtonReadMore);
 
@@ -89,30 +148,50 @@ function visopgaver(obj) {
   }
 }
 
+function visenkeltopgave(id=null) {
+  if (id == null) {
+    console.log("mangler id");
+  } else {
+    var getall = JSON.parse(localStorage.getItem("opgave"));
+    if (getall.length >0) {
+      if (typeof getall[id] == "object") {
+        var arg = getall[id];
+        if (arg.opgavetitel && arg.emneord && arg.lektionslængde && arg.beskrivelse && arg.klassetrin) {
+          document.getElementById("spanlektionslængde").innerHTML = arg["lektionslængde"];
+          document.getElementById("spanbeskrivelse").innerHTML = arg["beskrivelse"];
+          document.getElementById("spanklassetrin").innerHTML = arg["klassetrin"];
+          document.getElementById("spanemneord").innerHTML = arg["emneord"];
+          document.getElementById("spantitel").innerHTML = arg["opgavetitel"];
+        }
+      }
+    }
+  }
+}
+
 /*
   Her laver vi funktionen til publisher knappen.
 */
-window.onload = function()
+window.addEventListener("load",function()
 {
-  visopgaver();
-  var mybutton = document.getElementById("detteharandreikke");
-  mybutton.addEventListener("click",function(){
-    opretopgave();
-  });
-}
-
-//Funktion der kan redigere ens profiloplysninger
-//function redigeroplysninger {
-//}
-
-//Funktion der kan fjerne en opgave
-//function fjernopgave() {
-//}
-
-//Funktion der kan sortere mellem ens opslag
-//function søgopgave() {
-//}
-
+  var idtag = window.location.hash;
+  if (idtag.length <2) {
+    visopgaver();
+    var mybutton = document.getElementById("detteharandreikke");
+    mybutton.addEventListener("click",function(){
+      opretopgave();
+    });
+  } else {
+    visenkeltopgave(idtag.substr(1));
+    viskommentar();
+    var kommentarbutton = document.getElementById("slåop");
+    if (kommentarbutton != null) {
+      kommentarbutton.addEventListener("click",function(){
+        opretkommentar();
+        viskommentar();
+      });
+    }
+  }
+});
 
 //Alertbox til registrering af newsletters
 function validation() {
@@ -124,7 +203,9 @@ function validation() {
     return true;
   }
 }
-//Log in info//
+
+
+//Log in info
 function check(form)
 {
  if(form.userid.value == "Mike" && form.pswrd.value == "momo")
