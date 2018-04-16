@@ -1,3 +1,5 @@
+
+/* Vi laver en funktion til kommentarfelt - Denne function udfolder */
 var acc = document.getElementsByClassName("accordian");
 var i;
 
