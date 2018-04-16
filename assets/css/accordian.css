@@ -4,19 +4,22 @@
   text-align: center;
 }
 
-h1 {
+h2 {
+  color: #216393;
   font-weight: lighter;
-  font-size: 70px;
+  font-size: 35px;
+font-family: 'lato', sans-serif;
 }
 
 button.accordian {
-  background: #DD1C1A;
-  color: #fff;
+  background: #f1f1f2;
+  color: #216393;
   cursor: pointer;
   border: 0px;
   padding: 18px;
   width: 70%;
-  text-align: left;
+  text-align: center;
+  font-family: 'lato', sans-serif;
   font-size: 18px;
   transition: .4s;
 }
@@ -26,7 +29,8 @@ button:focus {
 }
 
 button.accordian.active, button.accordian:hover {
-  background: #9B0A07;
+  background: #216393;
+  color: white;
 }
 
 div.panel {
