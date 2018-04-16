@@ -763,7 +763,7 @@ background-color: #f1f1f2;
     max-width: 300px;
     text-decoration: none;
     padding-top: 150px;
-    padding-left: 500px;
+    padding-left: 475px;
 }
 
 #loginknap {
@@ -772,13 +772,20 @@ background-color: #f1f1f2;
     background-color: #00a19b;
     margin-top: 5%;
     width: 120px;
-    margin-left: 100px;
+    margin-left: 90px;
 }
+
 #cancelknap {
     font-family: lato, sans-serif;
     color: #044C7F;
     background-color: #f1f1f2;
     margin-top: 5%;
     width: 120px;
-    margin-left: 100px;
+    margin-left: 90px;
+}
+
+#loginlogo {
+  width: 17%;
+  height: auto;
+  padding-top: 15px;
 }
