@@ -15,12 +15,14 @@ function opretopgave() {
       beskrivelse : beskrivelse,
       klassetrin : klassetrin
     };
+    console.log("det virker");
     setglobalvalue(opgavearray); //Sender informationerne videre (altså indholdet i opgavearray) til global funktionen
   } else {
     console.log("Der er noget som mangler");
   }
 }
 
+//Vi opretter en funktion her der kan oprette en kommentar, uden at den bliver vist endnu.
 function opretkommentar() {
   var skrivkommentar = document.getElementById('skrivkommentar').value;
   var kommentarområde = document.getElementById('kommentarområde').value;
@@ -28,7 +30,7 @@ function opretkommentar() {
   if(skrivkommentar && kommentarområde && slåop) {
     var opslagsid = window.location.hash.substr(1);
     var gammelkommentar = JSON.parse(localStorage.getItem("kommentar_" + opslagsid));
-    var kommentar = {
+    var kommentar = { //opretter array
       kommentar : skrivkommentar,
       område : kommentarområde
     };
@@ -38,12 +40,13 @@ function opretkommentar() {
         var gammelkommentar = [];
         gammelkommentar.push(kommentar);
     }
-    localStorage.setItem("kommentar_" + opslagsid, JSON.stringify(gammelkommentar));
+    localStorage.setItem("kommentar_" + opslagsid, JSON.stringify(gammelkommentar)); //Man benytter
   } else {
     console.log("Der er noget fra kommentararray der mangler");
   }
 }
 
+//Her viser vi kommentaren
 function viskommentar () {
   var opslagsid = window.location.hash.substr(1);
   var allekommentarer = JSON.parse(localStorage.getItem("kommentar_" + opslagsid));
@@ -82,7 +85,7 @@ function viskommentar () {
 //Laver en global handler, der håndterer local host for at kunne oprette opslag
 function setglobalvalue(obj) {
   obj = obj || null; // Vi sætter objektet til at være et objekt eller null, da det er lettere at arbejde med i stedet for undefined.
-  if(obj !== null){ //Data må ikke Wvære lige med null, sikrer at data er sendt igennem obj
+  if(obj !== null){ //Data må ikke være lige med null, sikrer at data er sendt igennem obj
     var getlocalstorage = localStorage.getItem("opgave"); //Her er opgave filnavnet i localstorage
     var mylocal = [];
     if (getlocalstorage !== null){
@@ -95,7 +98,7 @@ function setglobalvalue(obj) {
   }
 }
 
-//Vi ønsker at vise det visuelt på hjemmesiden
+//Vi ønsker at vise det visuelt på hjemmesiden ift. de debatter man opretter
 function visopgaver(obj=null) {
 
   /*
@@ -117,10 +120,10 @@ function visopgaver(obj=null) {
 
         var itemBoxTitle = document.createElement("h2"); //opretter h2
         itemBoxTitle.innerHTML = arg.opgavetitel;
-        itemBox .appendChild(itemBoxTitle);
+        itemBox.appendChild(itemBoxTitle);
 
         var itemBoxDesc = document.createElement("p"); //opretter paragraf
-        itemBoxDesc .innerHTML = arg.beskrivelse;
+        itemBoxDesc.innerHTML = arg.beskrivelse;
         itemBox.appendChild(itemBoxDesc);
 
         var itemBoxSub = document.createElement("span"); //opretter span
@@ -135,7 +138,7 @@ function visopgaver(obj=null) {
         itemBoxTime.innerHTML = "Klassetrin: " + arg.klassetrin;
         itemBox.appendChild(itemBoxTime);
 
-        var itemButtonReadMore = document.createElement("a");
+        var itemButtonReadMore = document.createElement("a"); //Opretter et href link, der fører videre til ens matematikopslag
         itemButtonReadMore.setAttribute("href", "./matematikopslag.html#" + ii);
         itemButtonReadMore.innerHTML = "Læs mere";
         itemBox.appendChild(itemButtonReadMore);
@@ -148,6 +151,7 @@ function visopgaver(obj=null) {
   }
 }
 
+// Man ønsker man at vise den enkelte opgave
 function visenkeltopgave(id=null) {
   if (id == null) {
     console.log("mangler id");
@@ -169,7 +173,7 @@ function visenkeltopgave(id=null) {
 }
 
 /*
-  Her laver vi funktionen til publisher knappen.
+  Her laver vi funktionen til publisher knappen, samt slåop
 */
 window.addEventListener("load",function()
 {
@@ -193,7 +197,6 @@ window.addEventListener("load",function()
   }
 });
 
-
 //Alertbox til registrering af newsletters
 function validation() {
   if (document.getElementById("nyhedsbrev").value == "") {
@@ -204,24 +207,21 @@ function validation() {
     return true;
   }
 }
+
 //Log in info//
 function check(form)
 {
  if(form.userid.value == "Mike" && form.pswrd.value == "momo")
-  {
-    window.open('kedulandingpage.html') && window.close('login.html')
-  }
-
- else
  {
+   window.open('kedulandingpage.html') && window.close('login.html')
+ } else {
    alert("Brugernavn og/eller Password er ugyldigt. Prøv igen.")
-  }
+ }
 }
+
 //Kommentarfelts script//
 var acc = document.getElementsByClassName("accordion");
-
 var i;
-
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
     this.classList.toggle("active");
