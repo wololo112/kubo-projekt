@@ -785,33 +785,39 @@ margin-top: 40px;
 /*Styling af div. tagget debatvisning, som viser ens blog*/
 #debatvisning {
   justify-content: space-around;
+  font-family: 'lato', sans-serif;
 
 }
 
 #debatvisning div {
+font-family: 'lato', sans-serif;
 height: 280px;
 width: 310px;
 margin-top: 30px;
 background-color: #f1f1f2;
+color: #044C7F;
 }
 
 #debatvisning div h2 {
+  font-family: 'lato', sans-serif;
   font-size: 20px;
-  color: blue;
+  color: #044C7F;
   text-align: center;
 }
 
 
 #debatvisning div p {
-  font-size: 18px;
-  color: yellow;
+  font-size: 13px;
+  font-family: 'lato', sans-serif;
+  color: #044C7F;
   text-align: center;
 }
 
 /*Den skal sættes til at være over hinanden, i stedet for ved siden af hinanden*/
 #debatvisning div span {
-  font-size: 18px;
-  color: purple;
+  font-family: 'lato',sans-serif;
+  font-size: 13px;
+  color: #044C7F;
   margin-left: 10px;
 }
 
@@ -859,4 +865,12 @@ background-color: #f1f1f2;
   text-align: center;
   font-family: 'lato';
   margin:200px;
+}
+
+#opretdig {
+    text-align: center;
+    font-family: 'lato', sans-serif;
+    color: #044C7F;
+    padding-right: 148px;
+    font-size: 15px;
 }
