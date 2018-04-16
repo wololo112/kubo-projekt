@@ -614,6 +614,31 @@ ul {
   position: relative;
   left: 58px;
 }
+/* Dette er selve dropdownmenuen med kommentarer */
+.accordion {
+    font-family: 'lato', sans-serif;
+    font-size: 15px;
+    background-color: #f1f1f2;
+    color: black;
+    width: 100%;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #044C7F;
+    color: white;
+}
+
+#kommentarpanel1 {
+    font-family: 'lato', sans-serif;
+    padding: 0 18px;
+    background-color: #f1f1f2;
+    color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
 
 /*Dette er i selve matematikopslags.html dokumentet, når man laver en kommentar*/
 #flex-section10 {
