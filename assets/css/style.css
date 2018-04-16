@@ -1,6 +1,9 @@
 /*Det er her det generelle der bliver vist (som ikke er en del af ens wrapper)*/
 body {
   margin: auto;
+background-image: url('../img/baggrund.png');
+background-size: contain;
+background-repeat: repeat-y;
 }
 
 /*Dette er her at selve at elementerne er i*/
@@ -495,6 +498,11 @@ input {
   margin: auto;
 }
 
+.sogefter{
+  margin-right: 60px;
+}
+
+
 /*Dette er oprette en ny debat og søge efter debatter for alle fag*/
 
 .nydebat {
@@ -510,10 +518,11 @@ input {
 
 #matematikdebat {
 
-  background-color: white;
   text-align: center;
   color: #044c7f;
   font-family: lato;
+  display: flex;
+  flex-direction: column;
 
 
 }
@@ -654,7 +663,7 @@ font-family: lato;
 }
 
 .gemteopgaver {
-margin: 100px;
+margin-top: 40px;
 }
 
 /*Dette er footer, FAQ og social links*/
@@ -770,6 +779,7 @@ margin: 100px;
 /*Styling af div. tagget debatvisning, som viser ens blog*/
 #debatvisning {
   justify-content: space-around;
+
 }
 
 #debatvisning div {
