@@ -86,20 +86,20 @@ background-repeat: repeat-y;
 #trappeet h2 {
   margin-top: 0px;
   padding-top: 20px;
-  font-family: lato;
+  font-family: 'lato';
 }
 
 #trappeto h2 {
   margin-left: 400px;
   color: #044c7f;
-  font-family: lato;
+  font-family: 'lato';
 
 }
 
 #trappetre h2 {
   margin-left: 530px;
   color: #044c7f;
-  font-family: lato;
+  font-family: 'lato';
 
 }
 
@@ -155,7 +155,7 @@ background-repeat: repeat-y;
 .navflexto button a {
   color: white;
   text-decoration: none;
-  font-family: lato;
+  font-family: 'lato';
   font-size: 15px;
 }
 
@@ -198,7 +198,7 @@ input {
     background-color: #f1f1f2;
     background-image: url("../img/imgone.jpg");
     background-size: cover;
-    height: 400px;
+    height: 420px;
     content: center, center;
 }
 
@@ -247,7 +247,7 @@ input {
   width: 100%;
   text-align: center;
   padding-top: 250px;
-  font-family: lato;
+  font-family: 'lato';
 }
 
 #forumtekst {
@@ -265,7 +265,7 @@ input {
   width: 100%;
   text-align: center;
   color: #044c7f;
-  font-family: lato;
+  font-family: 'lato';
 }
 
 #calltoaction {
@@ -282,7 +282,7 @@ input {
   margin-top: 10vh;
   text-align: center;
   padding-top: 9px;
-  font-family: lato;
+  font-family: 'lato';
 }
 
 .buttons button {
@@ -299,7 +299,7 @@ input {
 .buttons button a {
   color: white;
   text-decoration: none;
-  font-family: lato;
+  font-family: 'lato';
   font-size: 15px;
 }
 
@@ -307,7 +307,7 @@ input {
     background: #00a19b;
     color: white;
     border-radius: 16px;
-    font-family: lato;
+    font-family: 'lato';
 }
 
 #video {
@@ -329,7 +329,7 @@ input {
   color: #044c7f;
   text-align: center;
   width: 100%;
-  font-family: lato;
+  font-family: 'lato';
 }
 
 #video-section {
@@ -386,6 +386,7 @@ input {
 
 }
 #klassetrin {
+  font-family: 'lato';
 
 }
 
@@ -412,7 +413,7 @@ input {
 }
 
 #klassetrin {
-  font-family: lato;
+  font-family: 'lato';
 }
 
 #flex-section6 h2 {
@@ -431,7 +432,7 @@ input {
 .bokset h4,
 .bokset h6,
 .bokset p {
-  font-family: lato;
+  font-family: 'lato';
   text-align: center;
   margin: 10px;
   color: #044c7f;
@@ -477,7 +478,7 @@ input {
 .semere button a {
   color: white;
   text-decoration: none;
-  font-family: lato;
+  font-family: 'lato';
   font-size: 13px;
    }
 
@@ -520,7 +521,7 @@ input {
 
   text-align: center;
   color: #044c7f;
-  font-family: lato;
+  font-family: 'lato';
   display: flex;
   flex-direction: column;
 
@@ -541,7 +542,7 @@ input {
   color: #044c7f;
   background-color: #f1f1f2;
   height: 70px;
-  font-family: lato;
+  font-family: 'lato';
 
 }
 
@@ -552,7 +553,7 @@ input {
 .flerematematik {
   text-align: center;
   color: #044c7f;
-  font-family: lato;
+  font-family: 'lato';
 
 }
 
@@ -624,7 +625,7 @@ ul {
 }
 
 #flex-section10 h2 {
-font-family: lato;
+font-family: 'lato';
 }
 
 #kommentarvisning {
@@ -643,14 +644,18 @@ font-family: lato;
 
 #slåop {
   display: flex;
-  flex-direction: column;
   width: 200px;
   height: 30px;
   color: white;
   background-color: #00a19b;
   justify-content: center;
+  margin: auto;
 
+}
 
+#skrivkommentar{
+  display: flex;
+  flex-direction: row;
 }
 #kommentarområde {
   width:200px;
@@ -700,7 +705,7 @@ margin-top: 40px;
   margin-top: -5vh;
   font-size: 10px;
   color: #044c7f;
-  font-family: lato;
+  font-family: 'lato';
 }
 
 /* Nyhedsbrevet i footeren */
@@ -744,7 +749,7 @@ margin-top: 40px;
     justify-content: flex-end;
 }
 
-.fa-facebok {
+.fa-facebook {
   background: #f1f1f2;
   color: black;
   flex-direction: row-reverse;
@@ -814,7 +819,7 @@ background-color: #f1f1f2;
 }
 
 #login {
-    font-family: lato, sans-serif;
+    font-family: 'lato', sans-serif;
     color: #044C7F;
     display: flex;
     flex-direction: column;
@@ -827,7 +832,7 @@ background-color: #f1f1f2;
 }
 
 #loginknap {
-    font-family: lato, sans-serif;
+    font-family: 'lato', sans-serif;
     color: white;
     background-color: #00a19b;
     margin-top: 5%;
@@ -836,7 +841,7 @@ background-color: #f1f1f2;
 }
 
 #cancelknap {
-    font-family: lato, sans-serif;
+    font-family: 'lato', sans-serif;
     color: #044C7F;
     background-color: #f1f1f2;
     margin-top: 5%;
@@ -851,6 +856,6 @@ background-color: #f1f1f2;
 }
 .errortekst {
   text-align: center;
-  font-family: lato;
+  font-family: 'lato';
   margin:200px;
 }
