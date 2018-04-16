@@ -1,6 +1,9 @@
 /*Det er her det generelle der bliver vist (som ikke er en del af ens wrapper)*/
 body {
   margin: auto;
+background-image: url('../img/baggrund.png');
+background-size: contain;
+background-repeat: repeat-y;
 }
 
 /*Dette er her at selve at elementerne er i*/
@@ -39,12 +42,11 @@ body {
 #header a {
   color: f2f2f2;
   text-decoration: none;
-  padding: 10px 15.15px;
+
   font-size; 17px;
 }
 
 #header a:hover {
-
   color: black;
 }
 
@@ -105,75 +107,90 @@ body {
 
 /*Dette er logoet ved navigationsbaren*/
 #logo {
-  width: 180%;
+  width: 100px;
   height: auto;
-  padding-top: 15px;
+  margin-left: 10px;
+  margin-top: 5px;
 }
+
 .navbar {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
 }
+
 
 .navflexet {
   display: flex;
-
-  flex-grow: 1;
 }
 
 .navflexto {
   display: flex;
-  max-width: 30%;
-  max-height: 20%;
-  flex-grow: 1;
+  margin-left: 20px;
+}
+.space{
+  justify-content: space-between;
+}
+.linje{
+  width: 100%;
+}
+
+.margin-l-50{
+  margin-left: 50px;
+}
+
+.knap {
+  width: 120px;
+  height: 25px;
+  background: #00a19b;
+  border-radius: 16px;
+  color: white;
+  margin: auto;
+  display: block;
+  text-decoration: none;
+  margin-left: 5px;
 }
 
 .navflexto button a {
-  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-family: lato;
+  font-size: 15px;
 }
 
 .navflextre {
   display: flex;
-  flex-grow: 2;
-  max-height: 40px;
-  margin-top: 22px;
-
+  justify-content: center;
+  align-items: center;
 }
 
 .navflexfire {
   display: flex;
-  flex-grow: 1;
-
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
 }
 
 input {
-  font-family: 'lato',;
+  font-family: 'lato';
   font-size: 12px;
   text-align: center;
   border-radius: 15px;
 
 }
 
-#blog {
-  margin-top: 10px;
-  width: 30%;
-
+#blog, #besked, #notifikation{
+  height: 27px;
+  margin-left: 10px;
+  padding: 10px;
 }
-#besked {
-  margin-top: 13px;
+ #tagtile{
+   height: 50px;
+   margin-left: 10px;
+   margin-right: 10px;
+ }
 
-  width: 30%;
-}
-
-#notifikation {
-  margin-top: 13px;
-
-  width: 20%;
-}
-
-#tagtile {
-  margin-top: 8px;
-  width: 23%;
-}
 /*Dette er alle de ting som sker under forsiden*/
 
 #loaded {
@@ -278,6 +295,7 @@ input {
   display: block;
   text-decoration: none;
 }
+
 .buttons button a {
   color: white;
   text-decoration: none;
@@ -480,6 +498,11 @@ input {
   margin: auto;
 }
 
+.sogefter{
+  margin-right: 60px;
+}
+
+
 /*Dette er oprette en ny debat og søge efter debatter for alle fag*/
 
 .nydebat {
@@ -495,10 +518,11 @@ input {
 
 #matematikdebat {
 
-  background-color: white;
   text-align: center;
   color: #044c7f;
   font-family: lato;
+  display: flex;
+  flex-direction: column;
 
 
 }
@@ -621,7 +645,7 @@ ul {
   display: flex;
   margin: auto;
   text-align: center;
-  flex-direction: row;
+
 }
 
 #flex-section10 h2 {
@@ -645,6 +669,17 @@ font-family: lato;
 #slåop {
   display: flex;
   flex-direction: column;
+  width: 200px;
+  height: 30px;
+  color: white;
+  background-color: #00a19b;
+  justify-content: center;
+
+
+}
+#kommentarområde {
+  width:200px;
+  height: 30px;
 }
 
 .sprogdebat {
@@ -653,7 +688,7 @@ font-family: lato;
 }
 
 .gemteopgaver {
-margin: 100px;
+margin-top: 40px;
 }
 
 /*Dette er footer, FAQ og social links*/
@@ -769,6 +804,7 @@ margin: 100px;
 /*Styling af div. tagget debatvisning, som viser ens blog*/
 #debatvisning {
   justify-content: space-around;
+
 }
 
 #debatvisning div {
