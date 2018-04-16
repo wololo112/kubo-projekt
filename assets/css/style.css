@@ -811,6 +811,8 @@ color: #044C7F;
   font-family: 'lato', sans-serif;
   color: #044C7F;
   text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 /*Den skal sættes til at være over hinanden, i stedet for ved siden af hinanden*/
@@ -819,10 +821,23 @@ color: #044C7F;
   font-size: 13px;
   color: #044C7F;
   margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
 }
 
 #debatvisning div button {
 
+}
+
+#debatvisning a {
+font-family: 'lato', sans-serif;
+font-size: 13px;
+color: #216393;
+display: flex;
+flex-direction: column;
+padding-left: 10px;
+margin-top: 15px;
 }
 
 #login {
