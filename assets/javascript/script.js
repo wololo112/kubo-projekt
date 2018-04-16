@@ -215,6 +215,22 @@ function check(form)
 
  else
  {
-   alert("Username og/eller Password er ugyldigt. Prøv igen.")
+   alert("Brugernavn og/eller Password er ugyldigt. Prøv igen.")
   }
+}
+//Kommentarfelts script//
+var acc = document.getElementsByClassName("accordion");
+
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var kommentarpanel1 = this.nextElementSibling;
+    if (kommentarpanel1.style.maxHeight){
+      kommentarpanel1.style.maxHeight = null;
+    } else {
+      kommentarpanel1.style.maxHeight = kommentarpanel1.scrollHeight + "px";
+    }
+  });
 }

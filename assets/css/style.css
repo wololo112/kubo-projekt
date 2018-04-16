@@ -1,6 +1,9 @@
 /*Det er her det generelle der bliver vist (som ikke er en del af ens wrapper)*/
 body {
   margin: auto;
+background-image: url('../img/baggrund.png');
+background-size: contain;
+background-repeat: repeat-y;
 }
 
 /*Dette er her at selve at elementerne er i*/
@@ -39,12 +42,11 @@ body {
 #header a {
   color: f2f2f2;
   text-decoration: none;
-  padding: 10px 15.15px;
+
   font-size; 17px;
 }
 
 #header a:hover {
-
   color: black;
 }
 
@@ -84,20 +86,20 @@ body {
 #trappeet h2 {
   margin-top: 0px;
   padding-top: 20px;
-  font-family: lato;
+  font-family: 'lato';
 }
 
 #trappeto h2 {
   margin-left: 400px;
   color: #044c7f;
-  font-family: lato;
+  font-family: 'lato';
 
 }
 
 #trappetre h2 {
   margin-left: 530px;
   color: #044c7f;
-  font-family: lato;
+  font-family: 'lato';
 
 }
 
@@ -105,75 +107,90 @@ body {
 
 /*Dette er logoet ved navigationsbaren*/
 #logo {
-  width: 140%;
-  height: 48%;
-  padding-top: 15px;
+  width: 100px;
+  height: auto;
+  margin-left: 10px;
+  margin-top: 5px;
 }
+
 .navbar {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
 }
+
 
 .navflexet {
   display: flex;
-
-  flex-grow: 1;
 }
 
 .navflexto {
   display: flex;
-  max-width: 30%;
-  max-height: 20%;
-  flex-grow: 1;
+  margin-left: 20px;
+}
+.space{
+  justify-content: space-between;
+}
+.linje{
+  width: 100%;
+}
+
+.margin-l-50{
+  margin-left: 50px;
+}
+
+.knap {
+  width: 120px;
+  height: 25px;
+  background: #00a19b;
+  border-radius: 16px;
+  color: white;
+  margin: auto;
+  display: block;
+  text-decoration: none;
+  margin-left: 5px;
 }
 
 .navflexto button a {
-  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-family: 'lato';
+  font-size: 15px;
 }
 
 .navflextre {
   display: flex;
-  flex-grow: 2;
-  max-height: 40px;
-  margin-top: 22px;
-
+  justify-content: center;
+  align-items: center;
 }
 
 .navflexfire {
   display: flex;
-  flex-grow: 1;
-
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
 }
 
 input {
-  font-family: 'lato',;
+  font-family: 'lato';
   font-size: 12px;
   text-align: center;
-  border-radius: 16px;
+  border-radius: 15px;
 
 }
 
-#blog {
-  margin-top: 10px;
-  width: 30%;
-
+#blog, #besked, #notifikation{
+  height: 27px;
+  margin-left: 10px;
+  padding: 10px;
 }
-#besked {
-  margin-top: 13px;
+ #tagtile{
+   height: 50px;
+   margin-left: 10px;
+   margin-right: 10px;
+ }
 
-  width: 30%;
-}
-
-#notifikation {
-  margin-top: 13px;
-
-  width: 20%;
-}
-
-#tagtile {
-  margin-top: 8px;
-  width: 23%;
-}
 /*Dette er alle de ting som sker under forsiden*/
 
 #loaded {
@@ -181,7 +198,7 @@ input {
     background-color: #f1f1f2;
     background-image: url("../img/imgone.jpg");
     background-size: cover;
-    height: 400px;
+    height: 420px;
     content: center, center;
 }
 
@@ -230,7 +247,7 @@ input {
   width: 100%;
   text-align: center;
   padding-top: 250px;
-  font-family: lato;
+  font-family: 'lato';
 }
 
 #forumtekst {
@@ -248,7 +265,7 @@ input {
   width: 100%;
   text-align: center;
   color: #044c7f;
-  font-family: lato;
+  font-family: 'lato';
 }
 
 #calltoaction {
@@ -265,7 +282,7 @@ input {
   margin-top: 10vh;
   text-align: center;
   padding-top: 9px;
-  font-family: lato;
+  font-family: 'lato';
 }
 
 .buttons button {
@@ -278,10 +295,11 @@ input {
   display: block;
   text-decoration: none;
 }
+
 .buttons button a {
   color: white;
   text-decoration: none;
-  font-family: lato;
+  font-family: 'lato';
   font-size: 15px;
 }
 
@@ -289,7 +307,7 @@ input {
     background: #00a19b;
     color: white;
     border-radius: 16px;
-    font-family: lato;
+    font-family: 'lato';
 }
 
 #video {
@@ -311,7 +329,7 @@ input {
   color: #044c7f;
   text-align: center;
   width: 100%;
-  font-family: lato;
+  font-family: 'lato';
 }
 
 #video-section {
@@ -368,6 +386,7 @@ input {
 
 }
 #klassetrin {
+  font-family: 'lato';
 
 }
 
@@ -379,6 +398,7 @@ input {
   width: 100px;
   border-radius: 16px;
   color: white;
+  margin-left: 60px;
 
 }
 
@@ -393,7 +413,7 @@ input {
 }
 
 #klassetrin {
-  font-family: lato;
+  font-family: 'lato';
 }
 
 #flex-section6 h2 {
@@ -412,7 +432,7 @@ input {
 .bokset h4,
 .bokset h6,
 .bokset p {
-  font-family: lato;
+  font-family: 'lato';
   text-align: center;
   margin: 10px;
   color: #044c7f;
@@ -458,7 +478,7 @@ input {
 .semere button a {
   color: white;
   text-decoration: none;
-  font-family: lato;
+  font-family: 'lato';
   font-size: 13px;
    }
 
@@ -479,6 +499,11 @@ input {
   margin: auto;
 }
 
+.sogefter{
+  margin-right: 60px;
+}
+
+
 /*Dette er oprette en ny debat og søge efter debatter for alle fag*/
 
 .nydebat {
@@ -494,10 +519,11 @@ input {
 
 #matematikdebat {
 
-  background-color: white;
   text-align: center;
   color: #044c7f;
-  font-family: lato;
+  font-family: 'lato';
+  display: flex;
+  flex-direction: column;
 
 
 }
@@ -516,7 +542,7 @@ input {
   color: #044c7f;
   background-color: #f1f1f2;
   height: 70px;
-  font-family: lato;
+  font-family: 'lato';
 
 }
 
@@ -527,7 +553,7 @@ input {
 .flerematematik {
   text-align: center;
   color: #044c7f;
-  font-family: lato;
+  font-family: 'lato';
 
 }
 
@@ -588,13 +614,77 @@ ul {
   position: relative;
   left: 58px;
 }
+/* Dette er selve dropdownmenuen med kommentarer */
+.accordion {
+    font-family: 'lato', sans-serif;
+    font-size: 15px;
+    background-color: #f1f1f2;
+    color: black;
+    width: 100%;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #044C7F;
+    color: white;
+}
+
+#kommentarpanel1 {
+    font-family: 'lato', sans-serif;
+    padding: 0 18px;
+    background-color: #f1f1f2;
+    color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
 
 /*Dette er i selve matematikopslags.html dokumentet, når man laver en kommentar*/
 #flex-section10 {
-  background-color: gray;
+  background-color: #f1f1f2;
+  display: flex;
+  margin: auto;
+  text-align: center;
+
+}
+
+#flex-section10 h2 {
+font-family: 'lato';
+}
+
+#kommentarvisning {
+  display: flex;
+  justify-content: center;
+}
+
+#matematikdebat {
+  display: flex;
+  justify-content: center;
+}
+#skrivkommentar {
+  height: 200px;
+  width: 500px;
+}
+
+#slåop {
+  display: flex;
+  width: 200px;
+  height: 30px;
+  color: white;
+  background-color: #00a19b;
+  justify-content: center;
+  margin: auto;
+
+}
+
+#skrivkommentar{
   display: flex;
   flex-direction: row;
-  margin: auto;
+}
+#kommentarområde {
+  width:200px;
+  height: 30px;
 }
 
 .sprogdebat {
@@ -603,7 +693,7 @@ ul {
 }
 
 .gemteopgaver {
-margin: 100px;
+margin-top: 40px;
 }
 
 /*Dette er footer, FAQ og social links*/
@@ -631,7 +721,7 @@ margin: 100px;
 
 #kedufooterlogo {
   max-width: 60%;
-  max-height: 60%;
+  height: auto;
 }
 
 /*FAQ ved footeren*/
@@ -640,7 +730,7 @@ margin: 100px;
   margin-top: -5vh;
   font-size: 10px;
   color: #044c7f;
-  font-family: lato;
+  font-family: 'lato';
 }
 
 /* Nyhedsbrevet i footeren */
@@ -684,7 +774,7 @@ margin: 100px;
     justify-content: flex-end;
 }
 
-.fa-facebok {
+.fa-facebook {
   background: #f1f1f2;
   color: black;
   flex-direction: row-reverse;
@@ -719,6 +809,7 @@ margin: 100px;
 /*Styling af div. tagget debatvisning, som viser ens blog*/
 #debatvisning {
   justify-content: space-around;
+
 }
 
 #debatvisning div {
@@ -810,7 +901,7 @@ div.panel {
 /* Dette er for login-siden */
 
 #login {
-    font-family: lato, sans-serif;
+    font-family: 'lato', sans-serif;
     color: #044C7F;
     display: flex;
     flex-direction: column;
@@ -818,19 +909,35 @@ div.panel {
     justify-content: center;
     max-width: 300px;
     text-decoration: none;
-    padding-top: 150px;
-    padding-left: 500px;
+    padding-top: 200px;
+    padding-left: 475px;
 }
 
 #loginknap {
-    font-family: lato, sans-serif;
+    font-family: 'lato', sans-serif;
     color: white;
     background-color: #00a19b;
     margin-top: 5%;
+    width: 120px;
+    margin-left: 90px;
 }
+
 #cancelknap {
-    font-family: lato, sans-serif;
+    font-family: 'lato', sans-serif;
     color: #044C7F;
     background-color: #f1f1f2;
     margin-top: 5%;
+    width: 120px;
+    margin-left: 90px;
+}
+
+#loginlogo {
+  width: 17%;
+  height: auto;
+  padding-top: 15px;
+}
+.errortekst {
+  text-align: center;
+  font-family: 'lato';
+  margin:200px;
 }
