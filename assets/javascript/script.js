@@ -137,6 +137,7 @@ function visopgaver(obj=null) {
 
         var itemButtonReadMore = document.createElement("a");
         itemButtonReadMore.setAttribute("href", "./matematikopslag.html#" + ii);
+        itemButtonReadMore.id = hreflink;
         itemButtonReadMore.innerHTML = "Læs mere";
         itemBox.appendChild(itemButtonReadMore);
 
