@@ -1,0 +1,43 @@
+
+
+.wrapperaccordian {
+  margin: 50px auto;
+  font-weight: 400;
+  text-align: center;
+
+}
+
+h1 {
+  font-weight: lighter;
+  font-size: 70px;
+}
+
+button.accordian {
+  background: #DD1C1A;
+  color: #fff;
+  cursor: pointer;
+  border: 0px;
+  padding: 18px;
+  width: 70%;
+  text-align: left;
+  font-size: 18px;
+  transition: .4s;
+}
+
+button:focus {
+  outline: none;
+}
+
+button.accordian.active, button.accordian:hover {
+  background: #9B0A07;
+}
+
+div.panel {
+  padding: 0 18px;
+  color: #000;
+  max-height: 0;
+  overflow: hidden;
+  width: 67.45%;
+  margin: 0 auto;
+  transition: max-height .2s ease-out;
+}
