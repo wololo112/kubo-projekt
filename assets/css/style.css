@@ -105,8 +105,8 @@ body {
 
 /*Dette er logoet ved navigationsbaren*/
 #logo {
-  width: 140%;
-  height: 48%;
+  width: 180%;
+  height: auto;
   padding-top: 15px;
 }
 .navbar {
@@ -632,7 +632,7 @@ margin: 100px;
 
 #kedufooterlogo {
   max-width: 60%;
-  max-height: 60%;
+  height: auto;
 }
 
 /*FAQ ved footeren*/
