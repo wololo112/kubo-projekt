@@ -1,14 +1,14 @@
-//Vi opretter en opgave
+//Vi opretter en funktion her der kan oprette en opgave, uden at den bliver vist endnu.
 function opretopgave() {
-  var opgavetitel = document.getElementById('opgavetitel').value;
-  var emneord = document.getElementById('emneord').value;
-  var lektionslængde = document.getElementById('lektionslængde').value;
-  var beskrivelse = document.getElementById('beskrivelse').value;
-  var klassetrin = document.getElementById('klassetrin').value;
+  var opgavetitel = document.getElementById('opgavetitel').value; //Man opretter variabler for opgavetitel, hvor man tager dets ID's værdi
+  var emneord = document.getElementById('emneord').value; //Man opretter variabler for emneord, hvor man tager dets ID's værdi
+  var lektionslængde = document.getElementById('lektionslængde').value; //Man opretter variabler for lektionslængde, hvor man tager dets ID's værdi
+  var beskrivelse = document.getElementById('beskrivelse').value; //Man opretter variabler for beskrivelse, hvor man tager dets ID's værdi
+  var klassetrin = document.getElementById('klassetrin').value; //Man opretter variabler for klassetrin, hvor man tager dets ID's værdi
 
 //Vi validerer om alle variabler kommer med info
   if (opgavetitel && emneord && lektionslængde && beskrivelse && klassetrin){
-    var opgavearray = { //venstre siden af colon af navnet, og højresiden er værdien
+    var opgavearray = { //venstre siden af colon af navnet, og højresiden er værdien - man opretter et array
       opgavetitel : opgavetitel,
       emneord : emneord,
       lektionslængde : lektionslængde,
