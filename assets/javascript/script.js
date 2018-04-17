@@ -40,7 +40,7 @@ function opretkommentar() {
         var gammelkommentar = [];
         gammelkommentar.push(kommentar);
     }
-    localStorage.setItem("kommentar_" + opslagsid, JSON.stringify(gammelkommentar)); //Man benytter
+    localStorage.setItem("kommentar_" + opslagsid, JSON.stringify(gammelkommentar)); //Man benytter stringify når man skal hente data til og fra en side.
   } else {
     console.log("Der er noget fra kommentararray der mangler");
   }
@@ -48,15 +48,15 @@ function opretkommentar() {
 
 //Her viser vi kommentaren
 function viskommentar () {
-  var opslagsid = window.location.hash.substr(1);
-  var allekommentarer = JSON.parse(localStorage.getItem("kommentar_" + opslagsid));
-  if (allekommentarer != null) {
+  var opslagsid = window.location.hash.substr(1); //Man tager andet bogstav på substring og frem
+  var allekommentarer = JSON.parse(localStorage.getItem("kommentar_" + opslagsid)); //JSON.parse benyttes til at lave data om til et objekt
+  if (allekommentarer != null) { // != er ikke lig med
 
-    document.getElementById("kommentarsporgsmal").innerHTML = "";
-    document.getElementById("kommentarandringer").innerHTML = "";
-    document.getElementById("kommentarandet").innerHTML = "";
+    document.getElementById("kommentarsporgsmal").innerHTML = ""; //Man hentyder inner HTML ID'et kommentarsporgsmal og ændrer det til at være tomt
+    document.getElementById("kommentarandringer").innerHTML = ""; //Man hentyder inner HTML ID'et kommentarandringer og ændrer det til at være tomt
+    document.getElementById("kommentarandet").innerHTML = ""; //Man hentyder inner HTML ID'et kommetarandet og ændrer det til at være tomt
 
-    allekommentarer.forEach(function(kom,ki){
+    allekommentarer.forEach(function(kom,ki){ //
       var kommentar = kom.kommentar || "";
       var område = null;
       if (kom.område == "opgaven") {
@@ -87,8 +87,8 @@ function setglobalvalue(obj) {
   obj = obj || null; // Vi sætter objektet til at være et objekt eller null, da det er lettere at arbejde med i stedet for undefined.
   if(obj !== null){ //Data må ikke være lige med null, sikrer at data er sendt igennem obj
     var getlocalstorage = localStorage.getItem("opgave"); //Her er opgave filnavnet i localstorage
-    var mylocal = [];
-    if (getlocalstorage !== null){
+    var mylocal = []; //Et tomt array
+    if (getlocalstorage !== null){ //
       var mylocal = JSON.parse(getlocalstorage);
     }
     mylocal.push(obj);
@@ -138,7 +138,7 @@ function visopgaver(obj=null) {
         itemBoxTime.innerHTML = "Klassetrin: " + arg.klassetrin;
         itemBox.appendChild(itemBoxTime);
 
-        var itemButtonReadMore = document.createElement("a"); //Opretter et href link, der fører videre til ens matematikopslag
+        var itemButtonReadMore = document.createElement("a"); //Opretter et href link, der fører videre til ens matematikopslag side
         itemButtonReadMore.setAttribute("href", "./matematikopslag.html#" + ii);
         itemButtonReadMore.innerHTML = "Læs mere";
         itemBox.appendChild(itemButtonReadMore);
@@ -208,28 +208,13 @@ function validation() {
   }
 }
 
-//Log in info//
+//Funktion til at kunne logge ind//
 function check(form)
 {
- if(form.userid.value == "Mike" && form.pswrd.value == "momo")
+ if(form.userid.value == "Mike" && form.pswrd.value == "momo") //Vi tjekker om ens username og password er Mike og momo
  {
-   window.open('kedulandingpage.html') && window.close('login.html')
+   window.open('kedulandingpage.html') && window.close('login.html') //så kan man logge ind
  } else {
-   alert("Brugernavn og/eller Password er ugyldigt. Prøv igen.")
+   alert("Brugernavn og/eller Password er ugyldigt. Prøv igen.") //Ellers får man en besked om forkert brugerlogin
  }
-}
-
-//Kommentarfelts script//
-var acc = document.getElementsByClassName("accordion");
-var i;
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var kommentarpanel1 = this.nextElementSibling;
-    if (kommentarpanel1.style.maxHeight){
-      kommentarpanel1.style.maxHeight = null;
-    } else {
-      kommentarpanel1.style.maxHeight = kommentarpanel1.scrollHeight + "px";
-    }
-  });
 }
