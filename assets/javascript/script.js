@@ -24,11 +24,11 @@ function opretopgave() {
 
 //Vi opretter en funktion her der kan oprette en kommentar, uden at den bliver vist endnu.
 function opretkommentar() {
-  var skrivkommentar = document.getElementById('skrivkommentar').value;
-  var kommentarområde = document.getElementById('kommentarområde').value;
+  var skrivkommentar = document.getElementById('skrivkommentar').value; //opretter variabel for at skrive en kommentar ud fra ID'et
+  var kommentarområde = document.getElementById('kommentarområde').value; //opretter variabel for at skrive en kommentarområde ud fra ID'et
 
-  if(skrivkommentar && kommentarområde && slåop) {
-    var opslagsid = window.location.hash.substr(1);
+  if(skrivkommentar && kommentarområde && slåop) { //venstre siden af colon af navnet, og højresiden er værdien - man opretter et array
+    var opslagsid = window.location.hash.substr(1); //Man tager andet bogstav på substring og frem
     var gammelkommentar = JSON.parse(localStorage.getItem("kommentar_" + opslagsid));
     var kommentar = { //opretter array
       kommentar : skrivkommentar,
