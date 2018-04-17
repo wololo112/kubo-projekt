@@ -61,11 +61,14 @@
           </div>
           <div class="nydebat">
             <div id="flex-section5" class="flex row">
-            <form>
+            <form class="flex">
+              <div>
               <input type="text" name="opgavetitel" id="opgavetitel" placeholder="Opgavetitel">
               <input type="text" name="emneord" id="emneord" placeholder="Indtast emneord">
               <input type="text" name="lektionslængde" id="lektionslængde" placeholder="Indtast lektionslængde">
-              <input type="text" name="beskrivelse" id="beskrivelse" placeholder="Beskrivelse">
+              <textarea id="beskrivelse" placeholder="Beskrivelse"></textarea>
+            </div>
+              <div class="form-klasse">
               <select id="klassetrin">
                 <option>
                   Vælg klassetrin
@@ -82,6 +85,7 @@
                </select>
               <input type="file" id="uploadfile" name="" placeholder="Upload fil">
               <input type="button" id="detteharandreikke" value="Publicher">
+            </div>
             </form>
           </div>
         </div>
@@ -170,9 +174,9 @@
             </div>
       </div>
       <div class="bokset">
-        <a><img src="assets/img/gemteblogs.png" id="gemindlæg" alt="posts"></a>
+          <a><img src="assets/img/gemteblogs.png" id="gemindlæg" alt="posts"></a>
         <h4>Plus for begyndere</h4>
-        <h6>- Af Test Person</h6>
+        <h6>- Af Test Person<h6>
           <p>Beskrivelse af opgaven, kort fortalt.Beskrivelse af opgaven, kort fortalt.Beskrivelse af opgaven, kort fortalt.Beskrivelse af opgaven, kort fortalt.</p>
           <p>Lektionslængde:<br>Fagområde:<br>Klassetrin:<br>Emneord:
             <div class="semere">
