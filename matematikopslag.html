@@ -64,6 +64,16 @@
                   </ul>
                 </div>
 
+                <div class="beskrivelse flex">
+                  <div>
+                    <h2>Beskrivelse</h2>
+                    <p>Lorem Ipsum er ganske enkelt fyldtekst fra print- og typografiindustrien. Lorem Ipsum har været standard fyldtekst siden 1500-tallet, hvor en ukendt trykker sammensatte en tilfældig spalte for at trykke en bog til sammenligning af forskellige skrifttyper. Lorem Ipsum har ikke alene overlevet fem århundreder, men har også vundet indpas i elektronisk typograf</p>
+                  </div>
+                  <div>
+                    <button>Download</button>
+                  </div>
+                </div>
+
                 <div class="tekstmat">
                   <h1>Plus for begyndere</h1>
                   <h3>- Af Test Person</h3>
@@ -73,7 +83,7 @@
               </div>
           </div>
 </div>
-<div class="wrapperaccordian">
+<div class="wrapperaccordian graa-bg">
   <h1>Kommentar</h1>
   <button class="accordian" type="button">Spørgsmål til opgaven</button>
     <div class="panel" id="kommentarsporgsmal"></div>
@@ -81,38 +91,45 @@
     <div class="panel" id="kommentarandringer"></div>
   <button class="accordian" type="button">Andet</button>
     <div class="panel" id="kommentarandet"></div>
-</div>
+
     <div id="kommentarvisning">
       <div id="matematikdebat">
         <div id="flex-section10">
-            <form>
-              <input type="text" name="skrivkommentar" id="skrivkommentar" placeholder="Skriv kommentar">
-              <div id="vælgområde">
-              <select id="kommentarområde">
-                <option>
-                  Vælg kommentarområde
-                </option>
-                <option value="opgaven">
-                  Spørgsmål til opgaven
-                </option>
-                <option value="ændringer">
-                  Forslag til ændringer
-                </option>
-                <option value="andet">
-                  Andet
-                </option>
-               </select>
-                 </div>
-              <!--<input type="file" id="uploadfile" name="" placeholder="Upload fil">--> <!--Dette kan ikke lade sig gøre i localstorage-->
-              <input type="button" id="slåop" value="Slå op">
+            <form class="matematik-form">
+              <!-- <input type="text" name="skrivkommentar" id="skrivkommentar" placeholder="Skriv kommentar"> -->
+              <textarea id="skrivkommentar" placeholder="Skriv kommentar"></textarea>
+
+              <div class="matematik-omraade">
+                <div id="vælgområde">
+                    <select id="kommentarområde">
+                      <option>
+                        Vælg kommentarområde
+                      </option>
+                      <option value="opgaven">
+                        Spørgsmål til opgaven
+                      </option>
+                      <option value="ændringer">
+                        Forslag til ændringer
+                      </option>
+                      <option value="andet">
+                        Andet
+                      </option>
+                     </select>
+                   </div>
+                <!--<input type="file" id="uploadfile" name="" placeholder="Upload fil">--> <!--Dette kan ikke lade sig gøre i localstorage-->
+                <input type="button" id="slåop" value="Slå op">
+              </div>
+              </div>
             </form>
         </div>
     </div>
         </div>
+</div>
+
       </div>
     </main>
-    <script src="./assets/javascript/script.js"></script>
-    <script src="./assets/javascript/accordian.js"></script>
+    <script src="assets/javascript/script.js"></script>
+    <script src="assets/javascript/accordian.js"></script>
   </body>
   <footer class="footer">
    <div id="kubo">
