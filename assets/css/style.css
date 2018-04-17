@@ -40,7 +40,7 @@ background-repeat: repeat-y;
 /*Dette er det specifikke element a-tagget*/
 
 #header a {
-  color: f2f2f2;
+  color: #f2f2f2;
   text-decoration: none;
 
   font-size; 17px;
@@ -566,7 +566,7 @@ input {
   background-color: #F6F7F9;
   display: flex;
   flex-wrap: wrap;
-  height: 662px;
+  height: 550px;
   justify-content: space-between;
   margin: 70px 40px;
 }
@@ -622,7 +622,6 @@ ul {
   display: flex;
   margin: auto;
   text-align: center;
-
 }
 
 #flex-section10 h2 {
@@ -632,6 +631,7 @@ font-family: 'lato';
 #kommentarvisning {
   display: flex;
   justify-content: center;
+  padding-bottom: 20px;
 }
 
 #matematikdebat {
@@ -872,9 +872,10 @@ margin-top: 15px;
 }
 
 #loginlogo {
-  width: 17%;
+  width: 100px;
   height: auto;
-  padding-top: 15px;
+  margin-left: 10px;
+  margin-top: 5px;
 }
 .errortekst {
   text-align: center;
@@ -888,4 +889,38 @@ margin-top: 15px;
     color: #044C7F;
     padding-right: 148px;
     font-size: 15px;
+}
+
+.beskrivelse{
+  width: 80%;
+  position: absolute;
+  top: 70%;
+  left: 6%;
+  align-items: flex-end;
+}
+.beskrivelse button{
+  padding: 10px 100px;
+  background: #00a19b;
+  border-radius: 16px;
+  color: white;
+  margin: auto;
+  display: block;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: lato;
+}
+
+.graa-bg{
+  background: #f1f1f2;
+}
+
+.matematik-form{
+  display: flex;
+
+}
+.matematik-omraade{
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  margin-top: 50px;
 }
