@@ -29,18 +29,18 @@ function opretkommentar() {
 
   if(skrivkommentar && kommentarområde && slåop) { //venstre siden af colon af navnet, og højresiden er værdien - man opretter et array
     var opslagsid = window.location.hash.substr(1); //Man tager andet bogstav på substring og frem
-    var gammelkommentar = JSON.parse(localStorage.getItem("kommentar_" + opslagsid));
+    var gammelkommentar = JSON.parse(localStorage.getItem("kommentar_" + opslagsid)); //Man laver JSON til et objekt.
     var kommentar = { //opretter array
       kommentar : skrivkommentar,
       område : kommentarområde
     };
     if (gammelkommentar != null){
-        gammelkommentar.push(kommentar);
+        gammelkommentar.push(kommentar); //push betyder at man tilføjer værdi til et array
     } else {
-        var gammelkommentar = [];
-        gammelkommentar.push(kommentar);
+        var gammelkommentar = []; //Hvis der er ikke er en kommentar, så tilføjer man en ny
+        gammelkommentar.push(kommentar);  //push betyder at man tilføjer værdi til et array
     }
-    localStorage.setItem("kommentar_" + opslagsid, JSON.stringify(gammelkommentar)); //Man benytter stringify når man skal hente data til og fra en side.
+    localStorage.setItem("kommentar_" + opslagsid, JSON.stringify(gammelkommentar)); //Man benytter stringify når man skal hente data til og fra en side - Man laver ens objekt om til JSON
   } else {
     console.log("Der er noget fra kommentararray der mangler");
   }
@@ -49,29 +49,26 @@ function opretkommentar() {
 //Her viser vi kommentaren
 function viskommentar () {
   var opslagsid = window.location.hash.substr(1); //Man tager andet bogstav på substring og frem
-  var allekommentarer = JSON.parse(localStorage.getItem("kommentar_" + opslagsid)); //JSON.parse benyttes til at lave data om til et objekt
+  var allekommentarer = JSON.parse(localStorage.getItem("kommentar_" + opslagsid)); //JSON.parse benyttes til at lave data om til et objekt (kommentar string er så man lettere kan se i localstorage at det er en kommentar)
   if (allekommentarer != null) { // != er ikke lig med
 
     document.getElementById("kommentarsporgsmal").innerHTML = ""; //Man hentyder inner HTML ID'et kommentarsporgsmal og ændrer det til at være tomt
     document.getElementById("kommentarandringer").innerHTML = ""; //Man hentyder inner HTML ID'et kommentarandringer og ændrer det til at være tomt
     document.getElementById("kommentarandet").innerHTML = ""; //Man hentyder inner HTML ID'et kommetarandet og ændrer det til at være tomt
 
-    allekommentarer.forEach(function(kom,ki){ //
-      var kommentar = kom.kommentar || "";
+    allekommentarer.forEach(function(kom,ki){ //her er kom indholdet af argumentet, og ki er værdien (man kan kalde værdierne for hvad de vil - da det er placeholder)
+      var kommentar = kom.kommentar || ""; //kom er værdien af kommentar. Man går ind i index af array, hvor man henter kommentarfeltet i objektet. (kom er et objekt)
       var område = null;
       if (kom.område == "opgaven") {
         område = document.getElementById("kommentarsporgsmal");
-        var områdenavn = "kommentarsporgsmal";
       } else if (kom.område == "ændringer"){
         område = document.getElementById("kommentarandringer");
-        var områdenavn = "kommentarandringer";
       } else if (kom.område == "andet"){
         område = document.getElementById("kommentarandet");
-        var områdenavn = "kommentarandet";
       } else {
         console.log ("ingen område");
       }
-      if (område != null) {
+      if (område != null) { //Her benytter man variablen område, som man har fået hentet dets ID'et ovenfra, og tilføjer en ny kommentar - man sikrer sig, at området findes og smider kommentar i.
         var nykommentar = document.createElement("p");
         nykommentar.setAttribute("class", "content");
         nykommentar.innerHTML = kommentar;
@@ -81,18 +78,17 @@ function viskommentar () {
   }
 }
 
-
 //Laver en global handler, der håndterer local host for at kunne oprette opslag
 function setglobalvalue(obj) {
   obj = obj || null; // Vi sætter objektet til at være et objekt eller null, da det er lettere at arbejde med i stedet for undefined.
   if(obj !== null){ //Data må ikke være lige med null, sikrer at data er sendt igennem obj
-    var getlocalstorage = localStorage.getItem("opgave"); //Her er opgave filnavnet i localstorage
+    var getlocalstorage = localStorage.getItem("opgave"); //Her er opgave filnavnet (cookies) i localstorage (selve det localstorage enheden hedder - key)
     var mylocal = []; //Et tomt array
-    if (getlocalstorage !== null){ //
+    if (getlocalstorage !== null){
       var mylocal = JSON.parse(getlocalstorage);
     }
-    mylocal.push(obj);
-    var json = JSON.stringify(mylocal);
+    mylocal.push(obj);  //push betyder at man tilføjer værdi til et array
+    var json = JSON.stringify(mylocal); //stringify laver objektet om til JSON (en string)
     localStorage.setItem("opgave",json);
     visopgaver(mylocal); //det som vi overskrider ved localstorage, vises her, da vi sender objektet videre.
   }
@@ -157,10 +153,10 @@ function visenkeltopgave(id=null) {
     console.log("mangler id");
   } else {
     var getall = JSON.parse(localStorage.getItem("opgave"));
-    if (getall.length >0) {
-      if (typeof getall[id] == "object") {
-        var arg = getall[id];
-        if (arg.opgavetitel && arg.emneord && arg.lektionslængde && arg.beskrivelse && arg.klassetrin) {
+    if (getall.length >0) { //så længe den indeholder en værdi, så tjekker man om værdien eksiterer.
+      if (typeof getall[id] == "object") { //typeof sender tilbage om hvilken værdi det er (string, obj etc)
+        var arg = getall[id]; //arg er forkortelsen for et argument, så man ved hvad man præcist har. Grunden til man laver arg, er så man har det specifikke ID til de enkelte ting.
+        if (arg.opgavetitel && arg.emneord && arg.lektionslængde && arg.beskrivelse && arg.klassetrin) { //if function der putter værdien ind i selve HTMLen
           document.getElementById("spanlektionslængde").innerHTML = arg["lektionslængde"];
           document.getElementById("spanbeskrivelse").innerHTML = arg["beskrivelse"];
           document.getElementById("spanklassetrin").innerHTML = arg["klassetrin"];
