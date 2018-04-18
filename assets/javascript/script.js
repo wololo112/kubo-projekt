@@ -199,11 +199,11 @@ window.addEventListener("load",function()
 
 //Alertbox til registrering af newsletters
 function validation() {
-  if (document.getElementById("nyhedsbrev").value == "") {
+  if (document.getElementById("nyhedsbrev").value == "") { //if else statement,
     alert("Du har ikke indtastet nogen emailadresse");
     return false;
   } else {
-    alert("Du er nu blevet tilmeldt nyhedsbrevet");
+    alert("Du er nu blevet tilmeldt nyhedsbrevet"); //alert der fortæller at man
     return true;
   }
 }
